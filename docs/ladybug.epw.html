@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ladybug.epw module &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ladybug.futil module" href="ladybug.futil.html" />
+    <link rel="prev" title="ladybug.dt module" href="ladybug.dt.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfind.html">ladybug.rootfind module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfind.html">ladybug.rootfind module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="ladybug.dt.html" title="Previous Chapter: ladybug.dt module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; ladybug.dt module</span>
+    </a>
+  </li>
+  <li>
+    <a href="ladybug.futil.html" title="Next Chapter: ladybug.futil module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">ladybug.futil module &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/ladybug.epw.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfind.html">ladybug.rootfind module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-ladybug.epw">
+<span id="ladybug-epw-module"></span><h1>ladybug.epw module<a class="headerlink" href="#module-ladybug.epw" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="ladybug.epw.EPW">
+<em class="property">class </em><code class="descclassname">ladybug.epw.</code><code class="descname">EPW</code><span class="sig-paren">(</span><em>file_path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/epw.html#EPW"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.epw.EPW" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>An EPW object containing all of the data of an .epw file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file_path</strong> – Local file address to an .epw file.</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Properties:</dt>
+<dd><ul class="first last simple">
+<li>location</li>
+<li>annual_heating_design_day_996</li>
+<li>annual_heating_design_day_990</li>
+<li>annual_cooling_design_day_004</li>
+<li>annual_cooling_design_day_010</li>
+<li>heating_design_condition_dictionary</li>
+<li>cooling_design_condition_dictionary</li>
+<li>extreme_design_condition_dictionary</li>
+<li>extreme_hot_weeks</li>
+<li>extreme_cold_weeks</li>
+<li>typical_weeks</li>
+<li>monthly_ground_temperature</li>
+<li>header</li>
+<li>years</li>
+<li>dry_bulb_temperature</li>
+<li>dew_point_temperature</li>
+<li>relative_humidity</li>
+<li>atmospheric_station_pressure</li>
+<li>extraterrestrial_horizontal_radiation</li>
+<li>extraterrestrial_direct_normal_radiation</li>
+<li>horizontal_infrared_radiation_intensity</li>
+<li>global_horizontal_radiation</li>
+<li>direct_normal_radiation</li>
+<li>diffuse_horizontal_radiation</li>
+<li>global_horizontal_illuminance</li>
+<li>direct_normal_illuminance</li>
+<li>diffuse_horizontal_illuminance</li>
+<li>zenith_luminance</li>
+<li>wind_direction</li>
+<li>wind_speed</li>
+<li>total_sky_cover</li>
+<li>opaque_sky_cover</li>
+<li>visibility</li>
+<li>ceiling_height</li>
+<li>present_weather_observation</li>
+<li>present_weather_codes</li>
+<li>precipitable_water</li>
+<li>aerosol_optical_depth</li>
+<li>snow_depth</li>
+<li>days_since_last_snowfall</li>
+<li>albedo</li>
+<li>liquid_precipitation_depth</li>
+<li>liquid_precipitation_quantity</li>
+<li>sky_temperature</li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="ladybug.epw.EPW.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/epw.html#EPW.ToString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.epw.EPW.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.epw.EPW.convert_to_ip">
+<code class="descname">convert_to_ip</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/epw.html#EPW.convert_to_ip"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.epw.EPW.convert_to_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert all Data Collections of this EPW object to IP units.</p>
+<p>This is useful when one knows that all graphics produced from this
+EPW should be in Imperial units.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.epw.EPW.convert_to_si">
+<code class="descname">convert_to_si</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/epw.html#EPW.convert_to_si"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.epw.EPW.convert_to_si" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert all Data Collections of this EPW object to SI units.</p>
+<p>This is useful when one needs to convert the EPW back to SI units
+from imperial units for processes like computing thermal comfort
+from EPW data.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.epw.EPW.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/epw.html#EPW.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.epw.EPW.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create EPW from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;location&quot;</span><span class="p">:</span> <span class="p">{}</span> <span class="p">,</span>  <span class="c1"># ladybug location schema</span>
+<span class="s2">&quot;data_collections&quot;</span><span class="p">:</span> <span class="p">[],</span>  <span class="c1"># list of hourly annual hourly data collection</span>
+    <span class="c1"># schemas for each of the 35 fields within the EPW file.</span>
+<span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># dict of metadata assigned to all data collections</span>
+<span class="s2">&quot;heating_dict&quot;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># dict containing heating design conditions</span>
+<span class="s2">&quot;cooling_dict&quot;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># dict containing cooling design conditions</span>
+<span class="s2">&quot;extremes_dict&quot;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># dict containing extreme design conditions</span>
+<span class="s2">&quot;extreme_hot_weeks&quot;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># dict with values of week-long ladybug</span>
+    <span class="c1"># analysis period schemas signifying extreme hot weeks.</span>
+<span class="s2">&quot;extreme_cold_weeks&quot;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># dict with values of week-long ladybug</span>
+    <span class="c1"># analysis period schemas signifying extreme cold weeks.</span>
+<span class="s2">&quot;typical_weeks&quot;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># dict with values of week-long ladybug</span>
+    <span class="c1"># analysis period schemas signifying typical weeks.</span>
+<span class="s2">&quot;monthly_ground_temps&quot;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># dict with keys as floats signifying</span>
+    <span class="c1"># depths in meters below ground and values of monthly</span>
+    <span class="c1"># collection schema</span>
+<span class="s2">&quot;is_ip&quot;</span><span class="p">:</span> <span class="bp">False</span>  <span class="c1"># Boolean // denote whether the data is in IP units</span>
+<span class="s2">&quot;is_leap_year&quot;</span><span class="p">:</span> <span class="bp">False</span>  <span class="c1"># Boolean, denote whether data is for</span>
+                       <span class="c1"># a leap year</span>
+<span class="s2">&quot;daylight_savings_start&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>  <span class="c1"># signify when daylight savings starts</span>
+                              <span class="c1"># or 0 for no daylight savings</span>
+<span class="s2">&quot;daylight_savings_end&quot;</span> <span class="mi">0</span><span class="p">,</span>  <span class="c1"># signify when daylight savings ends</span>
+                           <span class="c1"># or 0 for no daylight savings</span>
+<span class="s2">&quot;comments_1&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># String, epw comments</span>
+<span class="s2">&quot;comments_2&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># String, epw comments</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.epw.EPW.from_missing_values">
+<em class="property">classmethod </em><code class="descname">from_missing_values</code><span class="sig-paren">(</span><em>is_leap_year=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/epw.html#EPW.from_missing_values"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.epw.EPW.from_missing_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initalize an EPW object with all data missing or empty.</p>
+<p>Note that this classmethod is intended for workflows where one plans
+to set all of the data within the EPW object.  The EPW file written
+out from the use of this method is not simulate-abe or useful since
+all hourly data slots just possess the missing value for that data
+type. To obtain a EPW that is simulate-able in EnergyPlus, one must
+at least set the following properties:</p>
+<ul class="simple">
+<li>location</li>
+<li>dry_bulb_temperature</li>
+<li>dew_point_temperature</li>
+<li>relative_humidity</li>
+<li>atmospheric_station_pressure</li>
+<li>direct_normal_radiation</li>
+<li>diffuse_horizontal_radiation</li>
+<li>wind_direction</li>
+<li>wind_speed</li>
+<li>total_sky_cover</li>
+<li>opaque_sky_cover or horizontal_infrared_radiation_intensity</li>
+</ul>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>is_leap_year</strong> – A boolean to set whether the EPW object is for a leap year.</td>
+</tr>
+</tbody>
+</table>
+<p>Usage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ladybug.epw</span> <span class="kn">import</span> <span class="n">EPW</span>
+<span class="kn">from</span> <span class="nn">ladybug.location</span> <span class="kn">import</span> <span class="n">Location</span>
+<span class="n">epw</span> <span class="o">=</span> <span class="n">EPW</span><span class="o">.</span><span class="n">from_missing_values</span><span class="p">()</span>
+<span class="n">epw</span><span class="o">.</span><span class="n">location</span> <span class="o">=</span> <span class="n">Location</span><span class="p">(</span><span class="s1">&#39;Denver Golden&#39;</span><span class="p">,</span><span class="s1">&#39;CO&#39;</span><span class="p">,</span><span class="s1">&#39;USA&#39;</span><span class="p">,</span><span class="mf">39.74</span><span class="p">,</span><span class="o">-</span><span class="mf">105.18</span><span class="p">,</span><span class="o">-</span><span class="mf">7.0</span><span class="p">,</span><span class="mf">1829.0</span><span class="p">)</span>
+<span class="n">epw</span><span class="o">.</span><span class="n">dry_bulb_temperature</span><span class="o">.</span><span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="mi">20</span><span class="p">]</span> <span class="o">*</span> <span class="mi">8760</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.epw.EPW.import_data_by_field">
+<code class="descname">import_data_by_field</code><span class="sig-paren">(</span><em>field_number</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/epw.html#EPW.import_data_by_field"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.epw.EPW.import_data_by_field" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an annual data collection for any field_number in epw file.</p>
+<p>This is a useful method to get the values for fields that Ladybug currently
+doesn’t import by default. You can find list of fields by typing
+EPWFields.fields</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>field_number</strong> – <p>A value between 0 to 34 for different available epw fields.</p>
+<ul class="simple">
+<li>0 Year</li>
+<li>1 Month</li>
+<li>2 Day</li>
+<li>3 Hour</li>
+<li>4 Minute</li>
+<li>5 -</li>
+<li>6 Dry Bulb Temperature</li>
+<li>7 Dew Point Temperature</li>
+<li>8 Relative Humidity</li>
+<li>9 Atmospheric Station Pressure</li>
+<li>10 Extraterrestrial Horizontal Radiation</li>
+<li>11 Extraterrestrial Direct Normal Radiation</li>
+<li>12 Horizontal Infrared Radiation Intensity</li>
+<li>13 Global Horizontal Radiation</li>
+<li>14 Direct Normal Radiation</li>
+<li>15 Diffuse Horizontal Radiation</li>
+<li>16 Global Horizontal Illuminance</li>
+<li>17 Direct Normal Illuminance</li>
+<li>18 Diffuse Horizontal Illuminance</li>
+<li>19 Zenith Luminance</li>
+<li>20 Wind Direction</li>
+<li>21 Wind Speed</li>
+<li>22 Total Sky Cover</li>
+<li>23 Opaque Sky Cover</li>
+<li>24 Visibility</li>
+<li>25 Ceiling Height</li>
+<li>26 Present Weather Observation</li>
+<li>27 Present Weather Codes</li>
+<li>28 Precipitable Water</li>
+<li>29 Aerosol Optical Depth</li>
+<li>30 Snow Depth</li>
+<li>31 Days Since Last Snowfall</li>
+<li>32 Albedo</li>
+<li>33 Liquid Precipitation Depth</li>
+<li>34 Liquid Precipitation Quantity</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">An annual Ladybug list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.epw.EPW.save">
+<code class="descname">save</code><span class="sig-paren">(</span><em>file_path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/epw.html#EPW.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.epw.EPW.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save epw object as an epw file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file_path</strong> – A string representing the path to write the epw file to.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.epw.EPW.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/epw.html#EPW.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.epw.EPW.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the EPW to a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.epw.EPW.to_wea">
+<code class="descname">to_wea</code><span class="sig-paren">(</span><em>file_path</em>, <em>hoys=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/epw.html#EPW.to_wea"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.epw.EPW.to_wea" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write an wea file from the epw file.</p>
+<p>WEA carries radiation values from epw. Gendaymtx uses these values to
+generate the sky. For an annual analysis it is identical to using epw2wea.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>file_path</strong> – Full file path for output file.</li>
+<li><strong>hoys</strong> – List of hours of the year. Default is 0-8759.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.aerosol_optical_depth">
+<code class="descname">aerosol_optical_depth</code><a class="headerlink" href="#ladybug.epw.EPW.aerosol_optical_depth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Aerosol Optical Depth as a Ladybug Data Collection.</p>
+<p>This is the value for Aerosol Optical Depth in thousandths. It is not currently
+used in EnergyPlus calculations. Missing value is .999.</p>
+<p>Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.albedo">
+<code class="descname">albedo</code><a class="headerlink" href="#ladybug.epw.EPW.albedo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Albedo values as a Ladybug Data Collection.</p>
+<p>The ratio (unitless) of reflected solar irradiance to global horizontal
+irradiance. It is not currently used in EnergyPlus.</p>
+<p>Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.annual_cooling_design_day_004">
+<code class="descname">annual_cooling_design_day_004</code><a class="headerlink" href="#ladybug.epw.EPW.annual_cooling_design_day_004" title="Permalink to this definition">¶</a></dt>
+<dd><p>A design day object representing the annual 0.4% cooling design day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.annual_cooling_design_day_010">
+<code class="descname">annual_cooling_design_day_010</code><a class="headerlink" href="#ladybug.epw.EPW.annual_cooling_design_day_010" title="Permalink to this definition">¶</a></dt>
+<dd><p>A design day object representing the annual 1.0% cooling design day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.annual_heating_design_day_990">
+<code class="descname">annual_heating_design_day_990</code><a class="headerlink" href="#ladybug.epw.EPW.annual_heating_design_day_990" title="Permalink to this definition">¶</a></dt>
+<dd><p>A design day object representing the annual 99.0% heating design day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.annual_heating_design_day_996">
+<code class="descname">annual_heating_design_day_996</code><a class="headerlink" href="#ladybug.epw.EPW.annual_heating_design_day_996" title="Permalink to this definition">¶</a></dt>
+<dd><p>A design day object representing the annual 99.6% heating design day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.atmospheric_station_pressure">
+<code class="descname">atmospheric_station_pressure</code><a class="headerlink" href="#ladybug.epw.EPW.atmospheric_station_pressure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Atmospheric Station Pressure as a Ladybug Data Collection.</p>
+<p>This is the station pressure in Pa at the time indicated. Valid values range
+from 31,000 to 120,000. (These values were chosen from the standard barometric
+pressure for all elevations of the World). Missing value for this field is 999999
+Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.ceiling_height">
+<code class="descname">ceiling_height</code><a class="headerlink" href="#ladybug.epw.EPW.ceiling_height" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Ceiling Height as a Ladybug Data Collection.</p>
+<p>This is the value for ceiling height in m. (77777 is unlimited ceiling height.
+88888 is cirroform ceiling.) It is not currently used in EnergyPlus calculations.
+Missing value is 99999</p>
+<p>Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.cooling_design_condition_dictionary">
+<code class="descname">cooling_design_condition_dictionary</code><a class="headerlink" href="#ladybug.epw.EPW.cooling_design_condition_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dictionary with ASHRAE HOF Climate Design Data for cooling conditions.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.days_since_last_snowfall">
+<code class="descname">days_since_last_snowfall</code><a class="headerlink" href="#ladybug.epw.EPW.days_since_last_snowfall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Days Since Last Snow Fall as a Ladybug Data Collection.</p>
+<p>This is the value for Days Since Last Snowfall. It is not currently used in
+EnergyPlus calculations. Missing value is 99.</p>
+<p>Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.dew_point_temperature">
+<code class="descname">dew_point_temperature</code><a class="headerlink" href="#ladybug.epw.EPW.dew_point_temperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Dew Point Temperature as a Ladybug Data Collection.</p>
+<p>This is the dew point temperature in C at the time indicated. Note that this is
+a full numeric field (i.e. 23.6) and not an integer representation with tenths.
+Valid values range from -70 C to 70 C. Missing value for this field is 99.9
+Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.diffuse_horizontal_illuminance">
+<code class="descname">diffuse_horizontal_illuminance</code><a class="headerlink" href="#ladybug.epw.EPW.diffuse_horizontal_illuminance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Diffuse Horizontal Illuminance as a Ladybug Data Collection.</p>
+<p>This is the Diffuse Horizontal Illuminance in lux. (Average amount of illuminance
+in hundreds of lux received from the sky (excluding the solar disk) on a
+horizontal surface during the number of minutes preceding the time indicated.)
+It is not currently used in EnergyPlus calculations. It should have a minimum
+value of 0; missing value for this field is 999999 and will be considered missing
+if greater than or equal to 999900.</p>
+<p>Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.diffuse_horizontal_radiation">
+<code class="descname">diffuse_horizontal_radiation</code><a class="headerlink" href="#ladybug.epw.EPW.diffuse_horizontal_radiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Diffuse Horizontal Radiation as a Ladybug Data Collection.</p>
+<p>This is the Diffuse Horizontal Radiation in Wh/m2. (Amount of solar radiation in
+Wh/m2 received from the sky (excluding the solar disk) on a horizontal surface
+during the number of minutes preceding the time indicated.) If the field is
+missing ( &gt;= 9999) or invalid ( &lt; 0), it is set to 0. Counts of such missing
+values are totaled and presented at the end of the runperiod
+Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.direct_normal_illuminance">
+<code class="descname">direct_normal_illuminance</code><a class="headerlink" href="#ladybug.epw.EPW.direct_normal_illuminance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Direct Normal Illuminance as a Ladybug Data Collection.</p>
+<p>This is the Direct Normal Illuminance in lux. (Average amount of illuminance in
+hundreds of lux received directly from the solar disk on a surface perpendicular
+to the sun’s rays, during the number of minutes preceding the time indicated.)
+It is not currently used in EnergyPlus calculations. It should have a minimum
+value of 0; missing value for this field is 999999 and will be considered missing
+if greater than or equal to 999900.</p>
+<p>Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.direct_normal_radiation">
+<code class="descname">direct_normal_radiation</code><a class="headerlink" href="#ladybug.epw.EPW.direct_normal_radiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Direct Normal Radiation as a Ladybug Data Collection.</p>
+<p>This is the Direct Normal Radiation in Wh/m2. (Amount of solar radiation in
+Wh/m2 received directly from the solar disk on a surface perpendicular to the
+sun’s rays, during the number of minutes preceding the time indicated.) If the
+field is missing ( &gt;= 9999) or invalid ( &lt; 0), it is set to 0. Counts of such
+missing values are totaled and presented at the end of the runperiod.
+Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.dry_bulb_temperature">
+<code class="descname">dry_bulb_temperature</code><a class="headerlink" href="#ladybug.epw.EPW.dry_bulb_temperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Dry Bulb Temperature as a Ladybug Data Collection.</p>
+<p>This is the dry bulb temperature in C at the time indicated. Note that
+this is a full numeric field (i.e. 23.6) and not an integer representation
+with tenths. Valid values range from -70C to 70 C. Missing value for this
+field is 99.9.
+Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.extraterrestrial_direct_normal_radiation">
+<code class="descname">extraterrestrial_direct_normal_radiation</code><a class="headerlink" href="#ladybug.epw.EPW.extraterrestrial_direct_normal_radiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Extraterrestrial Direct Normal Radiation as a Ladybug Data Collection.</p>
+<p>This is the Extraterrestrial Direct Normal Radiation in Wh/m2. (Amount of solar
+radiation in Wh/m2 received on a surface normal to the rays of the sun at the top
+of the atmosphere during the number of minutes preceding the time indicated).
+It is not currently used in EnergyPlus calculations. It should have a minimum
+value of 0; missing value for this field is 9999.
+Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.extraterrestrial_horizontal_radiation">
+<code class="descname">extraterrestrial_horizontal_radiation</code><a class="headerlink" href="#ladybug.epw.EPW.extraterrestrial_horizontal_radiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Extraterrestrial Horizontal Radiation as a Ladybug Data Collection.</p>
+<p>This is the Extraterrestrial Horizontal Radiation in Wh/m2. It is not currently
+used in EnergyPlus calculations. It should have a minimum value of 0; missing
+value for this field is 9999.
+Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.extreme_cold_weeks">
+<code class="descname">extreme_cold_weeks</code><a class="headerlink" href="#ladybug.epw.EPW.extreme_cold_weeks" title="Permalink to this definition">¶</a></dt>
+<dd><p>A dictionary with AnalysisPeriods for the coldest weeks within the EPW.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.extreme_design_condition_dictionary">
+<code class="descname">extreme_design_condition_dictionary</code><a class="headerlink" href="#ladybug.epw.EPW.extreme_design_condition_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dictionary with ASHRAE HOF Climate Design Data for extreme conditions.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.extreme_hot_weeks">
+<code class="descname">extreme_hot_weeks</code><a class="headerlink" href="#ladybug.epw.EPW.extreme_hot_weeks" title="Permalink to this definition">¶</a></dt>
+<dd><p>A dictionary with AnalysisPeriods for the hottest week within the EPW.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.file_path">
+<code class="descname">file_path</code><a class="headerlink" href="#ladybug.epw.EPW.file_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get path to epw file.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.global_horizontal_illuminance">
+<code class="descname">global_horizontal_illuminance</code><a class="headerlink" href="#ladybug.epw.EPW.global_horizontal_illuminance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Global Horizontal Illuminance as a Ladybug Data Collection.</p>
+<p>This is the Global Horizontal Illuminance in lux. (Average total amount of
+direct and diffuse illuminance in hundreds of lux received on a horizontal
+surface during the number of minutes preceding the time indicated.) It is not
+currently used in EnergyPlus calculations. It should have a minimum value of 0;
+missing value for this field is 999999 and will be considered missing if greater
+than or equal to 999900.
+Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.global_horizontal_radiation">
+<code class="descname">global_horizontal_radiation</code><a class="headerlink" href="#ladybug.epw.EPW.global_horizontal_radiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Global Horizontal Radiation as a Ladybug Data Collection.</p>
+<p>This is the Global Horizontal Radiation in Wh/m2. (Total amount of direct and
+diffuse solar radiation in Wh/m2 received on a horizontal surface during the
+number of minutes preceding the time indicated.) It is not currently used in
+EnergyPlus calculations. It should have a minimum value of 0; missing value
+for this field is 9999.
+Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.header">
+<code class="descname">header</code><a class="headerlink" href="#ladybug.epw.EPW.header" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of text representing the full header (the first 8 lines) of the EPW.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.heating_design_condition_dictionary">
+<code class="descname">heating_design_condition_dictionary</code><a class="headerlink" href="#ladybug.epw.EPW.heating_design_condition_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dictionary with ASHRAE HOF Climate Design Data for heating conditions.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.horizontal_infrared_radiation_intensity">
+<code class="descname">horizontal_infrared_radiation_intensity</code><a class="headerlink" href="#ladybug.epw.EPW.horizontal_infrared_radiation_intensity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Horizontal Infrared Radiation Intensity as a Ladybug Data Collection.</p>
+<p>This is the Horizontal Infrared Radiation Intensity in W/m2. If it is missing,
+it is calculated from the Opaque Sky Cover field as shown in the following
+explanation. It should have a minimum value of 0; missing value for this field
+is 9999.
+Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.is_data_loaded">
+<code class="descname">is_data_loaded</code><a class="headerlink" href="#ladybug.epw.EPW.is_data_loaded" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True if weather data is loaded.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.is_header_loaded">
+<code class="descname">is_header_loaded</code><a class="headerlink" href="#ladybug.epw.EPW.is_header_loaded" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True if location data is loaded.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.is_ip">
+<code class="descname">is_ip</code><a class="headerlink" href="#ladybug.epw.EPW.is_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if the data collections of this file are in IP units.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.is_leap_year">
+<code class="descname">is_leap_year</code><a class="headerlink" href="#ladybug.epw.EPW.is_leap_year" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boolean to denote whether the EPW is a leap year or not.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.liquid_precipitation_depth">
+<code class="descname">liquid_precipitation_depth</code><a class="headerlink" href="#ladybug.epw.EPW.liquid_precipitation_depth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual liquid precipitation depth as a Ladybug Data Collection.</p>
+<p>The amount of liquid precipitation (mm) observed at the indicated time for the
+period indicated in the liquid precipitation quantity field. If this value is
+not missing, then it is used and overrides the “precipitation” flag as rainfall.
+Conversely, if the precipitation flag shows rain and this field is missing or
+zero, it is set to 1.5 (mm).</p>
+<p>Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.liquid_precipitation_quantity">
+<code class="descname">liquid_precipitation_quantity</code><a class="headerlink" href="#ladybug.epw.EPW.liquid_precipitation_quantity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Liquid Precipitation Quantity as a Ladybug Data Collection.</p>
+<p>The period of accumulation (hr) for the liquid precipitation depth field.
+It is not currently used in EnergyPlus.</p>
+<p>Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.location">
+<code class="descname">location</code><a class="headerlink" href="#ladybug.epw.EPW.location" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return location data.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.metadata">
+<code class="descname">metadata</code><a class="headerlink" href="#ladybug.epw.EPW.metadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dictionary of metadata written to DataCollection headers.</p>
+<p>Keys typically include “source”, “country”, and “city”).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.monthly_ground_temperature">
+<code class="descname">monthly_ground_temperature</code><a class="headerlink" href="#ladybug.epw.EPW.monthly_ground_temperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a dictionary of Mothly Data collections.</p>
+<p>The keys of this dictionary are the depths at which each set
+of temperatures occurrs.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.opaque_sky_cover">
+<code class="descname">opaque_sky_cover</code><a class="headerlink" href="#ladybug.epw.EPW.opaque_sky_cover" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Opaque Sky Cover as a Ladybug Data Collection.</p>
+<p>This is the value for opaque sky cover (tenths of coverage). (i.e. 1 is 1/10
+covered. 10 is total coverage). (Amount of sky dome in tenths covered by
+clouds or obscuring phenomena that prevent observing the sky or higher cloud
+layers at the time indicated.) This is not used unless the field for Horizontal
+Infrared Radiation Intensity is missing and then it is used to calculate
+Horizontal Infrared Radiation Intensity. Minimum value is 0; maximum value is
+10; missing value is 99.</p>
+<p>Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.precipitable_water">
+<code class="descname">precipitable_water</code><a class="headerlink" href="#ladybug.epw.EPW.precipitable_water" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Precipitable Water as a Ladybug Data Collection.</p>
+<p>This is the value for Precipitable Water in mm. (This is not rain - rain is
+inferred from the PresWeathObs field but a better result is from the Liquid
+Precipitation Depth field). It is not currently used in EnergyPlus calculations
+(primarily due to the unreliability of the reporting of this value). Missing
+value is 999.</p>
+<p>Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.present_weather_codes">
+<code class="descname">present_weather_codes</code><a class="headerlink" href="#ladybug.epw.EPW.present_weather_codes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Present Weather Codes as a Ladybug Data Collection.</p>
+<p>The present weather codes field is assumed to follow the TMY2 conventions for
+this field. Note that though this field may be represented as numeric (e.g. in
+the CSV format), it is really a text field of 9 single digits. This convention
+along with values for each “column” (left to right) is presented in Table 16.
+Note that some formats (e.g. TMY) does not follow this convention - as much as
+possible, the present weather codes are converted to this convention during
+WeatherConverter processing. Also note that the most important fields are those
+representing liquid precipitation - where the surfaces of the building would be
+wet. EnergyPlus uses “Snow Depth” to determine if snow is on the ground.</p>
+<p>Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.present_weather_observation">
+<code class="descname">present_weather_observation</code><a class="headerlink" href="#ladybug.epw.EPW.present_weather_observation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Present Weather Observation as a Ladybug Data Collection.</p>
+<p>If the value of the field is 0, then the observed weather codes are taken from
+the following field. If the value of the field is 9, then “missing” weather is
+assumed. Since the primary use of these fields (Present Weather Observation and
+Present Weather Codes) is for rain/wet surfaces, a missing observation field or
+a missing weather code implies no rain.</p>
+<p>Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.relative_humidity">
+<code class="descname">relative_humidity</code><a class="headerlink" href="#ladybug.epw.EPW.relative_humidity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Relative Humidity as a Ladybug Data Collection.</p>
+<p>This is the Relative Humidity in percent at the time indicated. Valid values
+range from 0% to 110%. Missing value for this field is 999.
+Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.sky_temperature">
+<code class="descname">sky_temperature</code><a class="headerlink" href="#ladybug.epw.EPW.sky_temperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Sky Temperature as a Ladybug Data Collection.</p>
+<p>This value in degrees Celcius is derived from the Horizontal Infrared
+Radiation Intensity in Wh/m2. It represents the long wave radiant
+temperature of the sky
+Read more at: <a class="reference external" href="https://bigladdersoftware.com/epx/docs/8-9/engineering-reference/climate-calculations.html#energyplus-sky-temperature-calculation">https://bigladdersoftware.com/epx/docs/8-9/engineering-reference/climate-calculations.html#energyplus-sky-temperature-calculation</a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.snow_depth">
+<code class="descname">snow_depth</code><a class="headerlink" href="#ladybug.epw.EPW.snow_depth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Snow Depth as a Ladybug Data Collection.</p>
+<p>This is the value for Snow Depth in cm. This field is used to tell when snow
+is on the ground and, thus, the ground reflectance may change. Missing value
+is 999.</p>
+<p>Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.total_sky_cover">
+<code class="descname">total_sky_cover</code><a class="headerlink" href="#ladybug.epw.EPW.total_sky_cover" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Total Sky Cover as a Ladybug Data Collection.</p>
+<p>This is the value for total sky cover (tenths of coverage). (i.e. 1 is 1/10
+covered. 10 is total coverage). (Amount of sky dome in tenths covered by clouds
+or obscuring phenomena at the hour indicated at the time indicated.) Minimum
+value is 0; maximum value is 10; missing value is 99.</p>
+<p>Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.typical_weeks">
+<code class="descname">typical_weeks</code><a class="headerlink" href="#ladybug.epw.EPW.typical_weeks" title="Permalink to this definition">¶</a></dt>
+<dd><p>A dictionary with AnalysisPeriods for the typical weeks within the EPW.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.visibility">
+<code class="descname">visibility</code><a class="headerlink" href="#ladybug.epw.EPW.visibility" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Visibility as a Ladybug Data Collection.</p>
+<p>This is the value for visibility in km. (Horizontal visibility at the time
+indicated.) It is not currently used in EnergyPlus calculations. Missing
+value is 9999.</p>
+<p>Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.wind_direction">
+<code class="descname">wind_direction</code><a class="headerlink" href="#ladybug.epw.EPW.wind_direction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Wind Direction as a Ladybug Data Collection.</p>
+<p>This is the Wind Direction in degrees where the convention is that North=0.0,
+East=90.0, South=180.0, West=270.0. (Wind direction in degrees at the time
+indicated. If calm, direction equals zero.) Values can range from 0 to 360.
+Missing value is 999.</p>
+<p>Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.wind_speed">
+<code class="descname">wind_speed</code><a class="headerlink" href="#ladybug.epw.EPW.wind_speed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Wind Speed as a Ladybug Data Collection.</p>
+<p>This is the wind speed in m/sec. (Wind speed at time indicated.) Values can
+range from 0 to 40. Missing value is 999.</p>
+<p>Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.years">
+<code class="descname">years</code><a class="headerlink" href="#ladybug.epw.EPW.years" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return years as a Ladybug Data Collection.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPW.zenith_luminance">
+<code class="descname">zenith_luminance</code><a class="headerlink" href="#ladybug.epw.EPW.zenith_luminance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return annual Zenith Luminance as a Ladybug Data Collection.</p>
+<p>This is the Zenith Illuminance in Cd/m2. (Average amount of luminance at
+the sky’s zenith in tens of Cd/m2 during the number of minutes preceding
+the time indicated.) It is not currently used in EnergyPlus calculations.
+It should have a minimum value of 0; missing value for this field is 9999.</p>
+<p>Read more at: <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a> (Chapter 2.9.1)</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.epw.EPWField">
+<em class="property">class </em><code class="descclassname">ladybug.epw.</code><code class="descname">EPWField</code><span class="sig-paren">(</span><em>field_dict</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/epw.html#EPWField"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.epw.EPWField" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>An EPW field.</p>
+<dl class="attribute">
+<dt id="ladybug.epw.EPWField.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.epw.EPWField.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of the field.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPWField.type">
+<code class="descname">type</code><a class="headerlink" href="#ladybug.epw.EPWField.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>field value type (e.g. int, float, str)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPWField.unit">
+<code class="descname">unit</code><a class="headerlink" href="#ladybug.epw.EPWField.unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Field unit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.epw.EPWField.missing">
+<code class="descname">missing</code><a class="headerlink" href="#ladybug.epw.EPWField.missing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Missing value for the data type in EPW files.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.epw.EPWFields">
+<em class="property">class </em><code class="descclassname">ladybug.epw.</code><code class="descname">EPWFields</code><a class="reference internal" href="_modules/ladybug/epw.html#EPWFields"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.epw.EPWFields" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>EPW weather file fields.</p>
+<p>Read more at <a class="reference external" href="https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf">https://energyplus.net/sites/all/modules/custom/nrel_custom/pdfs/pdfs_v8.4.0/AuxiliaryPrograms.pdf</a>
+(Chapter 2.9.1)</p>
+<dl class="classmethod">
+<dt id="ladybug.epw.EPWFields.field_by_number">
+<em class="property">classmethod </em><code class="descname">field_by_number</code><span class="sig-paren">(</span><em>field_number</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/epw.html#EPWFields.field_by_number"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.epw.EPWFields.field_by_number" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an EPWField based on field number.</p>
+<ul class="simple">
+<li>0 Year</li>
+<li>1 Month</li>
+<li>2 Day</li>
+<li>3 Hour</li>
+<li>4 Minute</li>
+<li>5 -</li>
+<li>6 Dry Bulb Temperature</li>
+<li>7 Dew Point Temperature</li>
+<li>8 Relative Humidity</li>
+<li>9 Atmospheric Station Pressure</li>
+<li>10 Extraterrestrial Horizontal Radiation</li>
+<li>11 Extraterrestrial Direct Normal Radiation</li>
+<li>12 Horizontal Infrared Radiation Intensity</li>
+<li>13 Global Horizontal Radiation</li>
+<li>14 Direct Normal Radiation</li>
+<li>15 Diffuse Horizontal Radiation</li>
+<li>16 Global Horizontal Illuminance</li>
+<li>17 Direct Normal Illuminance</li>
+<li>18 Diffuse Horizontal Illuminance</li>
+<li>19 Zenith Luminance</li>
+<li>20 Wind Direction</li>
+<li>21 Wind Speed</li>
+<li>22 Total Sky Cover</li>
+<li>23 Opaque Sky Cover</li>
+<li>24 Visibility</li>
+<li>25 Ceiling Height</li>
+<li>26 Present Weather Observation</li>
+<li>27 Present Weather Codes</li>
+<li>28 Precipitable Water</li>
+<li>29 Aerosol Optical Depth</li>
+<li>30 Snow Depth</li>
+<li>31 Days Since Last Snowfall</li>
+<li>32 Albedo</li>
+<li>33 Liquid Precipitation Depth</li>
+<li>34 Liquid Precipitation Quantity</li>
+</ul>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2019, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

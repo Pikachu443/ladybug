@@ -1,0 +1,2874 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ladybug.datatype.temperature module &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ladybug.datatype.temperaturedelta module" href="ladybug.datatype.temperaturedelta.html" />
+    <link rel="prev" title="ladybug.datatype.speed module" href="ladybug.datatype.speed.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfind.html">ladybug.rootfind module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="ladybug.datatype.speed.html" title="Previous Chapter: ladybug.datatype.speed module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; ladybug.datat...</span>
+    </a>
+  </li>
+  <li>
+    <a href="ladybug.datatype.temperaturedelta.html" title="Next Chapter: ladybug.datatype.temperaturedelta module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">ladybug.datat... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/ladybug.datatype.temperature.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-ladybug.datatype.temperature">
+<span id="ladybug-datatype-temperature-module"></span><h1>ladybug.datatype.temperature module<a class="headerlink" href="#module-ladybug.datatype.temperature" title="Permalink to this headline">¶</a></h1>
+<p>Temperature data type.</p>
+<dl class="class">
+<dt id="ladybug.datatype.temperature.AirTemperature">
+<em class="property">class </em><code class="descclassname">ladybug.datatype.temperature.</code><code class="descname">AirTemperature</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/temperature.html#AirTemperature"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.temperature.AirTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ladybug.datatype.temperature.Temperature" title="ladybug.datatype.temperature.Temperature"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.datatype.temperature.Temperature</span></code></a></p>
+<dl class="method">
+<dt id="ladybug.datatype.temperature.AirTemperature.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.AirTemperature.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.AirTemperature.duplicate">
+<code class="descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.AirTemperature.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the data type.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.datatype.temperature.AirTemperature.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.AirTemperature.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a data type from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># data type name of the data type as a string</span>
+    <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the class name of the data type as a string</span>
+    <span class="s2">&quot;base_unit&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the base unit of the data type</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.AirTemperature.is_in_range">
+<code class="descname">is_in_range</code><span class="sig-paren">(</span><em>values</em>, <em>unit=None</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.AirTemperature.is_in_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a list of values is within physically/mathematically possible range.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>values</strong> – A list of values.</li>
+<li><strong>unit</strong> – The unit of the values.  If not specified, the default metric
+unit will be assumed.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not in range.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.AirTemperature.is_unit_acceptable">
+<code class="descname">is_unit_acceptable</code><span class="sig-paren">(</span><em>unit</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.AirTemperature.is_unit_acceptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a certain unit is acceptable for the data type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>unit</strong> – A text string representing the abbreviated unit.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not acceptable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.AirTemperature.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.AirTemperature.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data type as a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.AirTemperature.to_ip">
+<code class="descname">to_ip</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.AirTemperature.to_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in IP and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.AirTemperature.to_si">
+<code class="descname">to_si</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.AirTemperature.to_si" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in SI and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.AirTemperature.to_unit">
+<code class="descname">to_unit</code><span class="sig-paren">(</span><em>values</em>, <em>unit</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.AirTemperature.to_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values converted to the unit given the input from_unit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.AirTemperature.abbreviation">
+<code class="descname">abbreviation</code><a class="headerlink" href="#ladybug.datatype.temperature.AirTemperature.abbreviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional abbreviation for the data type as text.</p>
+<p>(eg. ‘UTCI’ for Universal Thermal Climate Index).
+This can also be a letter that represents the data type in a formula.
+(eg. ‘A’ for Area; ‘P’ for Pressure)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.AirTemperature.cumulative">
+<code class="descname">cumulative</code><a class="headerlink" href="#ladybug.datatype.temperature.AirTemperature.cumulative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is cumulative.</p>
+<p>A Boolean indicates that the data type can be cumulative when it
+is represented over time (True) or it can only be averaged over time
+to be meaningful (False). Note that cumulative cannot be True
+when point_in_time is also True.
+(False Examples: Temperature, Irradiance, Illuminance)
+(True Examples: Energy, Radiation)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.AirTemperature.ip_units">
+<code class="descname">ip_units</code><a class="headerlink" href="#ladybug.datatype.temperature.AirTemperature.ip_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable ip_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.AirTemperature.isDataType">
+<code class="descname">isDataType</code><a class="headerlink" href="#ladybug.datatype.temperature.AirTemperature.isDataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.AirTemperature.isTemperature">
+<code class="descname">isTemperature</code><a class="headerlink" href="#ladybug.datatype.temperature.AirTemperature.isTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.AirTemperature.max">
+<code class="descname">max</code><a class="headerlink" href="#ladybug.datatype.temperature.AirTemperature.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper limit for the data type.</p>
+<p>Values above upper limit should be physically
+or mathematically impossible. (Default: +inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.AirTemperature.min">
+<code class="descname">min</code><a class="headerlink" href="#ladybug.datatype.temperature.AirTemperature.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower limit for the data type.</p>
+<p>Values below lower limit should be physically
+or mathematically impossible. (Default: -inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.AirTemperature.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.datatype.temperature.AirTemperature.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full name of the data type as a string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.AirTemperature.point_in_time">
+<code class="descname">point_in_time</code><a class="headerlink" href="#ladybug.datatype.temperature.AirTemperature.point_in_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is point_in_time.</p>
+<p>A Boolean indicates that the data type represents conditions
+at a single instant in time (True) or at an average or
+accumulation over time (False) when found in hourly lists of data.
+(True Examples: Temperature, WindSpeed)
+(False Examples: Energy, Radiation, Illuminance)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.AirTemperature.si_units">
+<code class="descname">si_units</code><a class="headerlink" href="#ladybug.datatype.temperature.AirTemperature.si_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable si_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.AirTemperature.unit_descr">
+<code class="descname">unit_descr</code><a class="headerlink" href="#ladybug.datatype.temperature.AirTemperature.unit_descr" title="Permalink to this definition">¶</a></dt>
+<dd><p>A description of the data type units</p>
+<p>A dictionary is used to describe categories that the numerical values of
+the units relate to.
+This is useful if numerical values of the units relate to specific categories.
+(eg. -1 = Cold, 0 = Neutral, +1 = Hot) (eg. 0 = False, 1 = True).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.AirTemperature.units">
+<code class="descname">units</code><a class="headerlink" href="#ladybug.datatype.temperature.AirTemperature.units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of all accetpable units of the data type as abbreviated text.</p>
+<p>The first item of the list should be the standard SI unit.
+The second item of the list should be the stadard IP unit (if it exists).
+The rest of the list can be any other acceptable units.
+(eg. [C, F, K])</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.datatype.temperature.DewPointTemperature">
+<em class="property">class </em><code class="descclassname">ladybug.datatype.temperature.</code><code class="descname">DewPointTemperature</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/temperature.html#DewPointTemperature"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.temperature.DewPointTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ladybug.datatype.temperature.Temperature" title="ladybug.datatype.temperature.Temperature"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.datatype.temperature.Temperature</span></code></a></p>
+<dl class="method">
+<dt id="ladybug.datatype.temperature.DewPointTemperature.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.DewPointTemperature.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.DewPointTemperature.duplicate">
+<code class="descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.DewPointTemperature.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the data type.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.datatype.temperature.DewPointTemperature.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.DewPointTemperature.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a data type from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># data type name of the data type as a string</span>
+    <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the class name of the data type as a string</span>
+    <span class="s2">&quot;base_unit&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the base unit of the data type</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.DewPointTemperature.is_in_range">
+<code class="descname">is_in_range</code><span class="sig-paren">(</span><em>values</em>, <em>unit=None</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.DewPointTemperature.is_in_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a list of values is within physically/mathematically possible range.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>values</strong> – A list of values.</li>
+<li><strong>unit</strong> – The unit of the values.  If not specified, the default metric
+unit will be assumed.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not in range.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.DewPointTemperature.is_unit_acceptable">
+<code class="descname">is_unit_acceptable</code><span class="sig-paren">(</span><em>unit</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.DewPointTemperature.is_unit_acceptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a certain unit is acceptable for the data type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>unit</strong> – A text string representing the abbreviated unit.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not acceptable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.DewPointTemperature.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.DewPointTemperature.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data type as a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.DewPointTemperature.to_ip">
+<code class="descname">to_ip</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.DewPointTemperature.to_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in IP and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.DewPointTemperature.to_si">
+<code class="descname">to_si</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.DewPointTemperature.to_si" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in SI and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.DewPointTemperature.to_unit">
+<code class="descname">to_unit</code><span class="sig-paren">(</span><em>values</em>, <em>unit</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.DewPointTemperature.to_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values converted to the unit given the input from_unit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DewPointTemperature.abbreviation">
+<code class="descname">abbreviation</code><a class="headerlink" href="#ladybug.datatype.temperature.DewPointTemperature.abbreviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional abbreviation for the data type as text.</p>
+<p>(eg. ‘UTCI’ for Universal Thermal Climate Index).
+This can also be a letter that represents the data type in a formula.
+(eg. ‘A’ for Area; ‘P’ for Pressure)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DewPointTemperature.cumulative">
+<code class="descname">cumulative</code><a class="headerlink" href="#ladybug.datatype.temperature.DewPointTemperature.cumulative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is cumulative.</p>
+<p>A Boolean indicates that the data type can be cumulative when it
+is represented over time (True) or it can only be averaged over time
+to be meaningful (False). Note that cumulative cannot be True
+when point_in_time is also True.
+(False Examples: Temperature, Irradiance, Illuminance)
+(True Examples: Energy, Radiation)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DewPointTemperature.ip_units">
+<code class="descname">ip_units</code><a class="headerlink" href="#ladybug.datatype.temperature.DewPointTemperature.ip_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable ip_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DewPointTemperature.isDataType">
+<code class="descname">isDataType</code><a class="headerlink" href="#ladybug.datatype.temperature.DewPointTemperature.isDataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DewPointTemperature.isTemperature">
+<code class="descname">isTemperature</code><a class="headerlink" href="#ladybug.datatype.temperature.DewPointTemperature.isTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DewPointTemperature.max">
+<code class="descname">max</code><a class="headerlink" href="#ladybug.datatype.temperature.DewPointTemperature.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper limit for the data type.</p>
+<p>Values above upper limit should be physically
+or mathematically impossible. (Default: +inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DewPointTemperature.min">
+<code class="descname">min</code><a class="headerlink" href="#ladybug.datatype.temperature.DewPointTemperature.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower limit for the data type.</p>
+<p>Values below lower limit should be physically
+or mathematically impossible. (Default: -inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DewPointTemperature.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.datatype.temperature.DewPointTemperature.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full name of the data type as a string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DewPointTemperature.point_in_time">
+<code class="descname">point_in_time</code><a class="headerlink" href="#ladybug.datatype.temperature.DewPointTemperature.point_in_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is point_in_time.</p>
+<p>A Boolean indicates that the data type represents conditions
+at a single instant in time (True) or at an average or
+accumulation over time (False) when found in hourly lists of data.
+(True Examples: Temperature, WindSpeed)
+(False Examples: Energy, Radiation, Illuminance)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DewPointTemperature.si_units">
+<code class="descname">si_units</code><a class="headerlink" href="#ladybug.datatype.temperature.DewPointTemperature.si_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable si_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DewPointTemperature.unit_descr">
+<code class="descname">unit_descr</code><a class="headerlink" href="#ladybug.datatype.temperature.DewPointTemperature.unit_descr" title="Permalink to this definition">¶</a></dt>
+<dd><p>A description of the data type units</p>
+<p>A dictionary is used to describe categories that the numerical values of
+the units relate to.
+This is useful if numerical values of the units relate to specific categories.
+(eg. -1 = Cold, 0 = Neutral, +1 = Hot) (eg. 0 = False, 1 = True).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DewPointTemperature.units">
+<code class="descname">units</code><a class="headerlink" href="#ladybug.datatype.temperature.DewPointTemperature.units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of all accetpable units of the data type as abbreviated text.</p>
+<p>The first item of the list should be the standard SI unit.
+The second item of the list should be the stadard IP unit (if it exists).
+The rest of the list can be any other acceptable units.
+(eg. [C, F, K])</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.datatype.temperature.DryBulbTemperature">
+<em class="property">class </em><code class="descclassname">ladybug.datatype.temperature.</code><code class="descname">DryBulbTemperature</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/temperature.html#DryBulbTemperature"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.temperature.DryBulbTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ladybug.datatype.temperature.Temperature" title="ladybug.datatype.temperature.Temperature"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.datatype.temperature.Temperature</span></code></a></p>
+<dl class="method">
+<dt id="ladybug.datatype.temperature.DryBulbTemperature.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.DryBulbTemperature.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.DryBulbTemperature.duplicate">
+<code class="descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.DryBulbTemperature.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the data type.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.datatype.temperature.DryBulbTemperature.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.DryBulbTemperature.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a data type from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># data type name of the data type as a string</span>
+    <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the class name of the data type as a string</span>
+    <span class="s2">&quot;base_unit&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the base unit of the data type</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.DryBulbTemperature.is_in_range">
+<code class="descname">is_in_range</code><span class="sig-paren">(</span><em>values</em>, <em>unit=None</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.DryBulbTemperature.is_in_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a list of values is within physically/mathematically possible range.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>values</strong> – A list of values.</li>
+<li><strong>unit</strong> – The unit of the values.  If not specified, the default metric
+unit will be assumed.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not in range.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.DryBulbTemperature.is_unit_acceptable">
+<code class="descname">is_unit_acceptable</code><span class="sig-paren">(</span><em>unit</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.DryBulbTemperature.is_unit_acceptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a certain unit is acceptable for the data type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>unit</strong> – A text string representing the abbreviated unit.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not acceptable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.DryBulbTemperature.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.DryBulbTemperature.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data type as a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.DryBulbTemperature.to_ip">
+<code class="descname">to_ip</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.DryBulbTemperature.to_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in IP and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.DryBulbTemperature.to_si">
+<code class="descname">to_si</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.DryBulbTemperature.to_si" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in SI and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.DryBulbTemperature.to_unit">
+<code class="descname">to_unit</code><span class="sig-paren">(</span><em>values</em>, <em>unit</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.DryBulbTemperature.to_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values converted to the unit given the input from_unit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DryBulbTemperature.abbreviation">
+<code class="descname">abbreviation</code><a class="headerlink" href="#ladybug.datatype.temperature.DryBulbTemperature.abbreviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional abbreviation for the data type as text.</p>
+<p>(eg. ‘UTCI’ for Universal Thermal Climate Index).
+This can also be a letter that represents the data type in a formula.
+(eg. ‘A’ for Area; ‘P’ for Pressure)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DryBulbTemperature.cumulative">
+<code class="descname">cumulative</code><a class="headerlink" href="#ladybug.datatype.temperature.DryBulbTemperature.cumulative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is cumulative.</p>
+<p>A Boolean indicates that the data type can be cumulative when it
+is represented over time (True) or it can only be averaged over time
+to be meaningful (False). Note that cumulative cannot be True
+when point_in_time is also True.
+(False Examples: Temperature, Irradiance, Illuminance)
+(True Examples: Energy, Radiation)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DryBulbTemperature.ip_units">
+<code class="descname">ip_units</code><a class="headerlink" href="#ladybug.datatype.temperature.DryBulbTemperature.ip_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable ip_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DryBulbTemperature.isDataType">
+<code class="descname">isDataType</code><a class="headerlink" href="#ladybug.datatype.temperature.DryBulbTemperature.isDataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DryBulbTemperature.isTemperature">
+<code class="descname">isTemperature</code><a class="headerlink" href="#ladybug.datatype.temperature.DryBulbTemperature.isTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DryBulbTemperature.max">
+<code class="descname">max</code><a class="headerlink" href="#ladybug.datatype.temperature.DryBulbTemperature.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper limit for the data type.</p>
+<p>Values above upper limit should be physically
+or mathematically impossible. (Default: +inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DryBulbTemperature.min">
+<code class="descname">min</code><a class="headerlink" href="#ladybug.datatype.temperature.DryBulbTemperature.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower limit for the data type.</p>
+<p>Values below lower limit should be physically
+or mathematically impossible. (Default: -inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DryBulbTemperature.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.datatype.temperature.DryBulbTemperature.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full name of the data type as a string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DryBulbTemperature.point_in_time">
+<code class="descname">point_in_time</code><a class="headerlink" href="#ladybug.datatype.temperature.DryBulbTemperature.point_in_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is point_in_time.</p>
+<p>A Boolean indicates that the data type represents conditions
+at a single instant in time (True) or at an average or
+accumulation over time (False) when found in hourly lists of data.
+(True Examples: Temperature, WindSpeed)
+(False Examples: Energy, Radiation, Illuminance)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DryBulbTemperature.si_units">
+<code class="descname">si_units</code><a class="headerlink" href="#ladybug.datatype.temperature.DryBulbTemperature.si_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable si_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DryBulbTemperature.unit_descr">
+<code class="descname">unit_descr</code><a class="headerlink" href="#ladybug.datatype.temperature.DryBulbTemperature.unit_descr" title="Permalink to this definition">¶</a></dt>
+<dd><p>A description of the data type units</p>
+<p>A dictionary is used to describe categories that the numerical values of
+the units relate to.
+This is useful if numerical values of the units relate to specific categories.
+(eg. -1 = Cold, 0 = Neutral, +1 = Hot) (eg. 0 = False, 1 = True).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.DryBulbTemperature.units">
+<code class="descname">units</code><a class="headerlink" href="#ladybug.datatype.temperature.DryBulbTemperature.units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of all accetpable units of the data type as abbreviated text.</p>
+<p>The first item of the list should be the standard SI unit.
+The second item of the list should be the stadard IP unit (if it exists).
+The rest of the list can be any other acceptable units.
+(eg. [C, F, K])</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.datatype.temperature.GroundTemperature">
+<em class="property">class </em><code class="descclassname">ladybug.datatype.temperature.</code><code class="descname">GroundTemperature</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/temperature.html#GroundTemperature"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.temperature.GroundTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ladybug.datatype.temperature.Temperature" title="ladybug.datatype.temperature.Temperature"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.datatype.temperature.Temperature</span></code></a></p>
+<dl class="method">
+<dt id="ladybug.datatype.temperature.GroundTemperature.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.GroundTemperature.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.GroundTemperature.duplicate">
+<code class="descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.GroundTemperature.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the data type.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.datatype.temperature.GroundTemperature.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.GroundTemperature.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a data type from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># data type name of the data type as a string</span>
+    <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the class name of the data type as a string</span>
+    <span class="s2">&quot;base_unit&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the base unit of the data type</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.GroundTemperature.is_in_range">
+<code class="descname">is_in_range</code><span class="sig-paren">(</span><em>values</em>, <em>unit=None</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.GroundTemperature.is_in_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a list of values is within physically/mathematically possible range.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>values</strong> – A list of values.</li>
+<li><strong>unit</strong> – The unit of the values.  If not specified, the default metric
+unit will be assumed.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not in range.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.GroundTemperature.is_unit_acceptable">
+<code class="descname">is_unit_acceptable</code><span class="sig-paren">(</span><em>unit</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.GroundTemperature.is_unit_acceptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a certain unit is acceptable for the data type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>unit</strong> – A text string representing the abbreviated unit.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not acceptable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.GroundTemperature.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.GroundTemperature.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data type as a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.GroundTemperature.to_ip">
+<code class="descname">to_ip</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.GroundTemperature.to_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in IP and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.GroundTemperature.to_si">
+<code class="descname">to_si</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.GroundTemperature.to_si" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in SI and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.GroundTemperature.to_unit">
+<code class="descname">to_unit</code><span class="sig-paren">(</span><em>values</em>, <em>unit</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.GroundTemperature.to_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values converted to the unit given the input from_unit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.GroundTemperature.abbreviation">
+<code class="descname">abbreviation</code><a class="headerlink" href="#ladybug.datatype.temperature.GroundTemperature.abbreviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional abbreviation for the data type as text.</p>
+<p>(eg. ‘UTCI’ for Universal Thermal Climate Index).
+This can also be a letter that represents the data type in a formula.
+(eg. ‘A’ for Area; ‘P’ for Pressure)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.GroundTemperature.cumulative">
+<code class="descname">cumulative</code><a class="headerlink" href="#ladybug.datatype.temperature.GroundTemperature.cumulative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is cumulative.</p>
+<p>A Boolean indicates that the data type can be cumulative when it
+is represented over time (True) or it can only be averaged over time
+to be meaningful (False). Note that cumulative cannot be True
+when point_in_time is also True.
+(False Examples: Temperature, Irradiance, Illuminance)
+(True Examples: Energy, Radiation)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.GroundTemperature.ip_units">
+<code class="descname">ip_units</code><a class="headerlink" href="#ladybug.datatype.temperature.GroundTemperature.ip_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable ip_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.GroundTemperature.isDataType">
+<code class="descname">isDataType</code><a class="headerlink" href="#ladybug.datatype.temperature.GroundTemperature.isDataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.GroundTemperature.isTemperature">
+<code class="descname">isTemperature</code><a class="headerlink" href="#ladybug.datatype.temperature.GroundTemperature.isTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.GroundTemperature.max">
+<code class="descname">max</code><a class="headerlink" href="#ladybug.datatype.temperature.GroundTemperature.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper limit for the data type.</p>
+<p>Values above upper limit should be physically
+or mathematically impossible. (Default: +inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.GroundTemperature.min">
+<code class="descname">min</code><a class="headerlink" href="#ladybug.datatype.temperature.GroundTemperature.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower limit for the data type.</p>
+<p>Values below lower limit should be physically
+or mathematically impossible. (Default: -inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.GroundTemperature.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.datatype.temperature.GroundTemperature.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full name of the data type as a string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.GroundTemperature.point_in_time">
+<code class="descname">point_in_time</code><a class="headerlink" href="#ladybug.datatype.temperature.GroundTemperature.point_in_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is point_in_time.</p>
+<p>A Boolean indicates that the data type represents conditions
+at a single instant in time (True) or at an average or
+accumulation over time (False) when found in hourly lists of data.
+(True Examples: Temperature, WindSpeed)
+(False Examples: Energy, Radiation, Illuminance)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.GroundTemperature.si_units">
+<code class="descname">si_units</code><a class="headerlink" href="#ladybug.datatype.temperature.GroundTemperature.si_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable si_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.GroundTemperature.unit_descr">
+<code class="descname">unit_descr</code><a class="headerlink" href="#ladybug.datatype.temperature.GroundTemperature.unit_descr" title="Permalink to this definition">¶</a></dt>
+<dd><p>A description of the data type units</p>
+<p>A dictionary is used to describe categories that the numerical values of
+the units relate to.
+This is useful if numerical values of the units relate to specific categories.
+(eg. -1 = Cold, 0 = Neutral, +1 = Hot) (eg. 0 = False, 1 = True).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.GroundTemperature.units">
+<code class="descname">units</code><a class="headerlink" href="#ladybug.datatype.temperature.GroundTemperature.units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of all accetpable units of the data type as abbreviated text.</p>
+<p>The first item of the list should be the standard SI unit.
+The second item of the list should be the stadard IP unit (if it exists).
+The rest of the list can be any other acceptable units.
+(eg. [C, F, K])</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.datatype.temperature.MeanRadiantTemperature">
+<em class="property">class </em><code class="descclassname">ladybug.datatype.temperature.</code><code class="descname">MeanRadiantTemperature</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/temperature.html#MeanRadiantTemperature"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.temperature.MeanRadiantTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ladybug.datatype.temperature.Temperature" title="ladybug.datatype.temperature.Temperature"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.datatype.temperature.Temperature</span></code></a></p>
+<dl class="method">
+<dt id="ladybug.datatype.temperature.MeanRadiantTemperature.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.MeanRadiantTemperature.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.MeanRadiantTemperature.duplicate">
+<code class="descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.MeanRadiantTemperature.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the data type.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.datatype.temperature.MeanRadiantTemperature.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.MeanRadiantTemperature.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a data type from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># data type name of the data type as a string</span>
+    <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the class name of the data type as a string</span>
+    <span class="s2">&quot;base_unit&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the base unit of the data type</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.MeanRadiantTemperature.is_in_range">
+<code class="descname">is_in_range</code><span class="sig-paren">(</span><em>values</em>, <em>unit=None</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.MeanRadiantTemperature.is_in_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a list of values is within physically/mathematically possible range.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>values</strong> – A list of values.</li>
+<li><strong>unit</strong> – The unit of the values.  If not specified, the default metric
+unit will be assumed.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not in range.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.MeanRadiantTemperature.is_unit_acceptable">
+<code class="descname">is_unit_acceptable</code><span class="sig-paren">(</span><em>unit</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.MeanRadiantTemperature.is_unit_acceptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a certain unit is acceptable for the data type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>unit</strong> – A text string representing the abbreviated unit.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not acceptable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.MeanRadiantTemperature.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.MeanRadiantTemperature.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data type as a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.MeanRadiantTemperature.to_ip">
+<code class="descname">to_ip</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.MeanRadiantTemperature.to_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in IP and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.MeanRadiantTemperature.to_si">
+<code class="descname">to_si</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.MeanRadiantTemperature.to_si" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in SI and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.MeanRadiantTemperature.to_unit">
+<code class="descname">to_unit</code><span class="sig-paren">(</span><em>values</em>, <em>unit</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.MeanRadiantTemperature.to_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values converted to the unit given the input from_unit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.MeanRadiantTemperature.abbreviation">
+<code class="descname">abbreviation</code><a class="headerlink" href="#ladybug.datatype.temperature.MeanRadiantTemperature.abbreviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional abbreviation for the data type as text.</p>
+<p>(eg. ‘UTCI’ for Universal Thermal Climate Index).
+This can also be a letter that represents the data type in a formula.
+(eg. ‘A’ for Area; ‘P’ for Pressure)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.MeanRadiantTemperature.cumulative">
+<code class="descname">cumulative</code><a class="headerlink" href="#ladybug.datatype.temperature.MeanRadiantTemperature.cumulative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is cumulative.</p>
+<p>A Boolean indicates that the data type can be cumulative when it
+is represented over time (True) or it can only be averaged over time
+to be meaningful (False). Note that cumulative cannot be True
+when point_in_time is also True.
+(False Examples: Temperature, Irradiance, Illuminance)
+(True Examples: Energy, Radiation)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.MeanRadiantTemperature.ip_units">
+<code class="descname">ip_units</code><a class="headerlink" href="#ladybug.datatype.temperature.MeanRadiantTemperature.ip_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable ip_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.MeanRadiantTemperature.isDataType">
+<code class="descname">isDataType</code><a class="headerlink" href="#ladybug.datatype.temperature.MeanRadiantTemperature.isDataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.MeanRadiantTemperature.isTemperature">
+<code class="descname">isTemperature</code><a class="headerlink" href="#ladybug.datatype.temperature.MeanRadiantTemperature.isTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.MeanRadiantTemperature.max">
+<code class="descname">max</code><a class="headerlink" href="#ladybug.datatype.temperature.MeanRadiantTemperature.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper limit for the data type.</p>
+<p>Values above upper limit should be physically
+or mathematically impossible. (Default: +inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.MeanRadiantTemperature.min">
+<code class="descname">min</code><a class="headerlink" href="#ladybug.datatype.temperature.MeanRadiantTemperature.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower limit for the data type.</p>
+<p>Values below lower limit should be physically
+or mathematically impossible. (Default: -inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.MeanRadiantTemperature.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.datatype.temperature.MeanRadiantTemperature.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full name of the data type as a string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.MeanRadiantTemperature.point_in_time">
+<code class="descname">point_in_time</code><a class="headerlink" href="#ladybug.datatype.temperature.MeanRadiantTemperature.point_in_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is point_in_time.</p>
+<p>A Boolean indicates that the data type represents conditions
+at a single instant in time (True) or at an average or
+accumulation over time (False) when found in hourly lists of data.
+(True Examples: Temperature, WindSpeed)
+(False Examples: Energy, Radiation, Illuminance)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.MeanRadiantTemperature.si_units">
+<code class="descname">si_units</code><a class="headerlink" href="#ladybug.datatype.temperature.MeanRadiantTemperature.si_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable si_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.MeanRadiantTemperature.unit_descr">
+<code class="descname">unit_descr</code><a class="headerlink" href="#ladybug.datatype.temperature.MeanRadiantTemperature.unit_descr" title="Permalink to this definition">¶</a></dt>
+<dd><p>A description of the data type units</p>
+<p>A dictionary is used to describe categories that the numerical values of
+the units relate to.
+This is useful if numerical values of the units relate to specific categories.
+(eg. -1 = Cold, 0 = Neutral, +1 = Hot) (eg. 0 = False, 1 = True).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.MeanRadiantTemperature.units">
+<code class="descname">units</code><a class="headerlink" href="#ladybug.datatype.temperature.MeanRadiantTemperature.units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of all accetpable units of the data type as abbreviated text.</p>
+<p>The first item of the list should be the standard SI unit.
+The second item of the list should be the stadard IP unit (if it exists).
+The rest of the list can be any other acceptable units.
+(eg. [C, F, K])</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.datatype.temperature.OperativeTemperature">
+<em class="property">class </em><code class="descclassname">ladybug.datatype.temperature.</code><code class="descname">OperativeTemperature</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/temperature.html#OperativeTemperature"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.temperature.OperativeTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ladybug.datatype.temperature.Temperature" title="ladybug.datatype.temperature.Temperature"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.datatype.temperature.Temperature</span></code></a></p>
+<dl class="method">
+<dt id="ladybug.datatype.temperature.OperativeTemperature.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.OperativeTemperature.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.OperativeTemperature.duplicate">
+<code class="descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.OperativeTemperature.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the data type.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.datatype.temperature.OperativeTemperature.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.OperativeTemperature.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a data type from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># data type name of the data type as a string</span>
+    <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the class name of the data type as a string</span>
+    <span class="s2">&quot;base_unit&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the base unit of the data type</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.OperativeTemperature.is_in_range">
+<code class="descname">is_in_range</code><span class="sig-paren">(</span><em>values</em>, <em>unit=None</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.OperativeTemperature.is_in_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a list of values is within physically/mathematically possible range.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>values</strong> – A list of values.</li>
+<li><strong>unit</strong> – The unit of the values.  If not specified, the default metric
+unit will be assumed.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not in range.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.OperativeTemperature.is_unit_acceptable">
+<code class="descname">is_unit_acceptable</code><span class="sig-paren">(</span><em>unit</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.OperativeTemperature.is_unit_acceptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a certain unit is acceptable for the data type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>unit</strong> – A text string representing the abbreviated unit.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not acceptable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.OperativeTemperature.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.OperativeTemperature.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data type as a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.OperativeTemperature.to_ip">
+<code class="descname">to_ip</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.OperativeTemperature.to_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in IP and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.OperativeTemperature.to_si">
+<code class="descname">to_si</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.OperativeTemperature.to_si" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in SI and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.OperativeTemperature.to_unit">
+<code class="descname">to_unit</code><span class="sig-paren">(</span><em>values</em>, <em>unit</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.OperativeTemperature.to_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values converted to the unit given the input from_unit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.OperativeTemperature.abbreviation">
+<code class="descname">abbreviation</code><a class="headerlink" href="#ladybug.datatype.temperature.OperativeTemperature.abbreviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional abbreviation for the data type as text.</p>
+<p>(eg. ‘UTCI’ for Universal Thermal Climate Index).
+This can also be a letter that represents the data type in a formula.
+(eg. ‘A’ for Area; ‘P’ for Pressure)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.OperativeTemperature.cumulative">
+<code class="descname">cumulative</code><a class="headerlink" href="#ladybug.datatype.temperature.OperativeTemperature.cumulative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is cumulative.</p>
+<p>A Boolean indicates that the data type can be cumulative when it
+is represented over time (True) or it can only be averaged over time
+to be meaningful (False). Note that cumulative cannot be True
+when point_in_time is also True.
+(False Examples: Temperature, Irradiance, Illuminance)
+(True Examples: Energy, Radiation)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.OperativeTemperature.ip_units">
+<code class="descname">ip_units</code><a class="headerlink" href="#ladybug.datatype.temperature.OperativeTemperature.ip_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable ip_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.OperativeTemperature.isDataType">
+<code class="descname">isDataType</code><a class="headerlink" href="#ladybug.datatype.temperature.OperativeTemperature.isDataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.OperativeTemperature.isTemperature">
+<code class="descname">isTemperature</code><a class="headerlink" href="#ladybug.datatype.temperature.OperativeTemperature.isTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.OperativeTemperature.max">
+<code class="descname">max</code><a class="headerlink" href="#ladybug.datatype.temperature.OperativeTemperature.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper limit for the data type.</p>
+<p>Values above upper limit should be physically
+or mathematically impossible. (Default: +inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.OperativeTemperature.min">
+<code class="descname">min</code><a class="headerlink" href="#ladybug.datatype.temperature.OperativeTemperature.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower limit for the data type.</p>
+<p>Values below lower limit should be physically
+or mathematically impossible. (Default: -inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.OperativeTemperature.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.datatype.temperature.OperativeTemperature.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full name of the data type as a string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.OperativeTemperature.point_in_time">
+<code class="descname">point_in_time</code><a class="headerlink" href="#ladybug.datatype.temperature.OperativeTemperature.point_in_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is point_in_time.</p>
+<p>A Boolean indicates that the data type represents conditions
+at a single instant in time (True) or at an average or
+accumulation over time (False) when found in hourly lists of data.
+(True Examples: Temperature, WindSpeed)
+(False Examples: Energy, Radiation, Illuminance)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.OperativeTemperature.si_units">
+<code class="descname">si_units</code><a class="headerlink" href="#ladybug.datatype.temperature.OperativeTemperature.si_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable si_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.OperativeTemperature.unit_descr">
+<code class="descname">unit_descr</code><a class="headerlink" href="#ladybug.datatype.temperature.OperativeTemperature.unit_descr" title="Permalink to this definition">¶</a></dt>
+<dd><p>A description of the data type units</p>
+<p>A dictionary is used to describe categories that the numerical values of
+the units relate to.
+This is useful if numerical values of the units relate to specific categories.
+(eg. -1 = Cold, 0 = Neutral, +1 = Hot) (eg. 0 = False, 1 = True).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.OperativeTemperature.units">
+<code class="descname">units</code><a class="headerlink" href="#ladybug.datatype.temperature.OperativeTemperature.units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of all accetpable units of the data type as abbreviated text.</p>
+<p>The first item of the list should be the standard SI unit.
+The second item of the list should be the stadard IP unit (if it exists).
+The rest of the list can be any other acceptable units.
+(eg. [C, F, K])</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.datatype.temperature.PrevailingOutdoorTemperature">
+<em class="property">class </em><code class="descclassname">ladybug.datatype.temperature.</code><code class="descname">PrevailingOutdoorTemperature</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/temperature.html#PrevailingOutdoorTemperature"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.temperature.PrevailingOutdoorTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ladybug.datatype.temperature.Temperature" title="ladybug.datatype.temperature.Temperature"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.datatype.temperature.Temperature</span></code></a></p>
+<dl class="method">
+<dt id="ladybug.datatype.temperature.PrevailingOutdoorTemperature.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.PrevailingOutdoorTemperature.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.PrevailingOutdoorTemperature.duplicate">
+<code class="descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.PrevailingOutdoorTemperature.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the data type.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.datatype.temperature.PrevailingOutdoorTemperature.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.PrevailingOutdoorTemperature.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a data type from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># data type name of the data type as a string</span>
+    <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the class name of the data type as a string</span>
+    <span class="s2">&quot;base_unit&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the base unit of the data type</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.PrevailingOutdoorTemperature.is_in_range">
+<code class="descname">is_in_range</code><span class="sig-paren">(</span><em>values</em>, <em>unit=None</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.PrevailingOutdoorTemperature.is_in_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a list of values is within physically/mathematically possible range.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>values</strong> – A list of values.</li>
+<li><strong>unit</strong> – The unit of the values.  If not specified, the default metric
+unit will be assumed.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not in range.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.PrevailingOutdoorTemperature.is_unit_acceptable">
+<code class="descname">is_unit_acceptable</code><span class="sig-paren">(</span><em>unit</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.PrevailingOutdoorTemperature.is_unit_acceptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a certain unit is acceptable for the data type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>unit</strong> – A text string representing the abbreviated unit.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not acceptable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.PrevailingOutdoorTemperature.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.PrevailingOutdoorTemperature.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data type as a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.PrevailingOutdoorTemperature.to_ip">
+<code class="descname">to_ip</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.PrevailingOutdoorTemperature.to_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in IP and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.PrevailingOutdoorTemperature.to_si">
+<code class="descname">to_si</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.PrevailingOutdoorTemperature.to_si" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in SI and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.PrevailingOutdoorTemperature.to_unit">
+<code class="descname">to_unit</code><span class="sig-paren">(</span><em>values</em>, <em>unit</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.PrevailingOutdoorTemperature.to_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values converted to the unit given the input from_unit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.PrevailingOutdoorTemperature.abbreviation">
+<code class="descname">abbreviation</code><a class="headerlink" href="#ladybug.datatype.temperature.PrevailingOutdoorTemperature.abbreviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional abbreviation for the data type as text.</p>
+<p>(eg. ‘UTCI’ for Universal Thermal Climate Index).
+This can also be a letter that represents the data type in a formula.
+(eg. ‘A’ for Area; ‘P’ for Pressure)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.PrevailingOutdoorTemperature.cumulative">
+<code class="descname">cumulative</code><a class="headerlink" href="#ladybug.datatype.temperature.PrevailingOutdoorTemperature.cumulative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is cumulative.</p>
+<p>A Boolean indicates that the data type can be cumulative when it
+is represented over time (True) or it can only be averaged over time
+to be meaningful (False). Note that cumulative cannot be True
+when point_in_time is also True.
+(False Examples: Temperature, Irradiance, Illuminance)
+(True Examples: Energy, Radiation)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.PrevailingOutdoorTemperature.ip_units">
+<code class="descname">ip_units</code><a class="headerlink" href="#ladybug.datatype.temperature.PrevailingOutdoorTemperature.ip_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable ip_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.PrevailingOutdoorTemperature.isDataType">
+<code class="descname">isDataType</code><a class="headerlink" href="#ladybug.datatype.temperature.PrevailingOutdoorTemperature.isDataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.PrevailingOutdoorTemperature.isTemperature">
+<code class="descname">isTemperature</code><a class="headerlink" href="#ladybug.datatype.temperature.PrevailingOutdoorTemperature.isTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.PrevailingOutdoorTemperature.max">
+<code class="descname">max</code><a class="headerlink" href="#ladybug.datatype.temperature.PrevailingOutdoorTemperature.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper limit for the data type.</p>
+<p>Values above upper limit should be physically
+or mathematically impossible. (Default: +inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.PrevailingOutdoorTemperature.min">
+<code class="descname">min</code><a class="headerlink" href="#ladybug.datatype.temperature.PrevailingOutdoorTemperature.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower limit for the data type.</p>
+<p>Values below lower limit should be physically
+or mathematically impossible. (Default: -inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.PrevailingOutdoorTemperature.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.datatype.temperature.PrevailingOutdoorTemperature.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full name of the data type as a string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.PrevailingOutdoorTemperature.point_in_time">
+<code class="descname">point_in_time</code><a class="headerlink" href="#ladybug.datatype.temperature.PrevailingOutdoorTemperature.point_in_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is point_in_time.</p>
+<p>A Boolean indicates that the data type represents conditions
+at a single instant in time (True) or at an average or
+accumulation over time (False) when found in hourly lists of data.
+(True Examples: Temperature, WindSpeed)
+(False Examples: Energy, Radiation, Illuminance)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.PrevailingOutdoorTemperature.si_units">
+<code class="descname">si_units</code><a class="headerlink" href="#ladybug.datatype.temperature.PrevailingOutdoorTemperature.si_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable si_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.PrevailingOutdoorTemperature.unit_descr">
+<code class="descname">unit_descr</code><a class="headerlink" href="#ladybug.datatype.temperature.PrevailingOutdoorTemperature.unit_descr" title="Permalink to this definition">¶</a></dt>
+<dd><p>A description of the data type units</p>
+<p>A dictionary is used to describe categories that the numerical values of
+the units relate to.
+This is useful if numerical values of the units relate to specific categories.
+(eg. -1 = Cold, 0 = Neutral, +1 = Hot) (eg. 0 = False, 1 = True).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.PrevailingOutdoorTemperature.units">
+<code class="descname">units</code><a class="headerlink" href="#ladybug.datatype.temperature.PrevailingOutdoorTemperature.units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of all accetpable units of the data type as abbreviated text.</p>
+<p>The first item of the list should be the standard SI unit.
+The second item of the list should be the stadard IP unit (if it exists).
+The rest of the list can be any other acceptable units.
+(eg. [C, F, K])</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.datatype.temperature.RadiantTemperature">
+<em class="property">class </em><code class="descclassname">ladybug.datatype.temperature.</code><code class="descname">RadiantTemperature</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/temperature.html#RadiantTemperature"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.temperature.RadiantTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ladybug.datatype.temperature.Temperature" title="ladybug.datatype.temperature.Temperature"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.datatype.temperature.Temperature</span></code></a></p>
+<dl class="method">
+<dt id="ladybug.datatype.temperature.RadiantTemperature.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.RadiantTemperature.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.RadiantTemperature.duplicate">
+<code class="descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.RadiantTemperature.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the data type.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.datatype.temperature.RadiantTemperature.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.RadiantTemperature.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a data type from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># data type name of the data type as a string</span>
+    <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the class name of the data type as a string</span>
+    <span class="s2">&quot;base_unit&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the base unit of the data type</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.RadiantTemperature.is_in_range">
+<code class="descname">is_in_range</code><span class="sig-paren">(</span><em>values</em>, <em>unit=None</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.RadiantTemperature.is_in_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a list of values is within physically/mathematically possible range.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>values</strong> – A list of values.</li>
+<li><strong>unit</strong> – The unit of the values.  If not specified, the default metric
+unit will be assumed.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not in range.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.RadiantTemperature.is_unit_acceptable">
+<code class="descname">is_unit_acceptable</code><span class="sig-paren">(</span><em>unit</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.RadiantTemperature.is_unit_acceptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a certain unit is acceptable for the data type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>unit</strong> – A text string representing the abbreviated unit.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not acceptable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.RadiantTemperature.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.RadiantTemperature.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data type as a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.RadiantTemperature.to_ip">
+<code class="descname">to_ip</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.RadiantTemperature.to_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in IP and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.RadiantTemperature.to_si">
+<code class="descname">to_si</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.RadiantTemperature.to_si" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in SI and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.RadiantTemperature.to_unit">
+<code class="descname">to_unit</code><span class="sig-paren">(</span><em>values</em>, <em>unit</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.RadiantTemperature.to_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values converted to the unit given the input from_unit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.RadiantTemperature.abbreviation">
+<code class="descname">abbreviation</code><a class="headerlink" href="#ladybug.datatype.temperature.RadiantTemperature.abbreviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional abbreviation for the data type as text.</p>
+<p>(eg. ‘UTCI’ for Universal Thermal Climate Index).
+This can also be a letter that represents the data type in a formula.
+(eg. ‘A’ for Area; ‘P’ for Pressure)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.RadiantTemperature.cumulative">
+<code class="descname">cumulative</code><a class="headerlink" href="#ladybug.datatype.temperature.RadiantTemperature.cumulative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is cumulative.</p>
+<p>A Boolean indicates that the data type can be cumulative when it
+is represented over time (True) or it can only be averaged over time
+to be meaningful (False). Note that cumulative cannot be True
+when point_in_time is also True.
+(False Examples: Temperature, Irradiance, Illuminance)
+(True Examples: Energy, Radiation)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.RadiantTemperature.ip_units">
+<code class="descname">ip_units</code><a class="headerlink" href="#ladybug.datatype.temperature.RadiantTemperature.ip_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable ip_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.RadiantTemperature.isDataType">
+<code class="descname">isDataType</code><a class="headerlink" href="#ladybug.datatype.temperature.RadiantTemperature.isDataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.RadiantTemperature.isTemperature">
+<code class="descname">isTemperature</code><a class="headerlink" href="#ladybug.datatype.temperature.RadiantTemperature.isTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.RadiantTemperature.max">
+<code class="descname">max</code><a class="headerlink" href="#ladybug.datatype.temperature.RadiantTemperature.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper limit for the data type.</p>
+<p>Values above upper limit should be physically
+or mathematically impossible. (Default: +inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.RadiantTemperature.min">
+<code class="descname">min</code><a class="headerlink" href="#ladybug.datatype.temperature.RadiantTemperature.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower limit for the data type.</p>
+<p>Values below lower limit should be physically
+or mathematically impossible. (Default: -inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.RadiantTemperature.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.datatype.temperature.RadiantTemperature.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full name of the data type as a string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.RadiantTemperature.point_in_time">
+<code class="descname">point_in_time</code><a class="headerlink" href="#ladybug.datatype.temperature.RadiantTemperature.point_in_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is point_in_time.</p>
+<p>A Boolean indicates that the data type represents conditions
+at a single instant in time (True) or at an average or
+accumulation over time (False) when found in hourly lists of data.
+(True Examples: Temperature, WindSpeed)
+(False Examples: Energy, Radiation, Illuminance)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.RadiantTemperature.si_units">
+<code class="descname">si_units</code><a class="headerlink" href="#ladybug.datatype.temperature.RadiantTemperature.si_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable si_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.RadiantTemperature.unit_descr">
+<code class="descname">unit_descr</code><a class="headerlink" href="#ladybug.datatype.temperature.RadiantTemperature.unit_descr" title="Permalink to this definition">¶</a></dt>
+<dd><p>A description of the data type units</p>
+<p>A dictionary is used to describe categories that the numerical values of
+the units relate to.
+This is useful if numerical values of the units relate to specific categories.
+(eg. -1 = Cold, 0 = Neutral, +1 = Hot) (eg. 0 = False, 1 = True).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.RadiantTemperature.units">
+<code class="descname">units</code><a class="headerlink" href="#ladybug.datatype.temperature.RadiantTemperature.units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of all accetpable units of the data type as abbreviated text.</p>
+<p>The first item of the list should be the standard SI unit.
+The second item of the list should be the stadard IP unit (if it exists).
+The rest of the list can be any other acceptable units.
+(eg. [C, F, K])</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.datatype.temperature.SkyTemperature">
+<em class="property">class </em><code class="descclassname">ladybug.datatype.temperature.</code><code class="descname">SkyTemperature</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/temperature.html#SkyTemperature"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.temperature.SkyTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ladybug.datatype.temperature.Temperature" title="ladybug.datatype.temperature.Temperature"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.datatype.temperature.Temperature</span></code></a></p>
+<dl class="method">
+<dt id="ladybug.datatype.temperature.SkyTemperature.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.SkyTemperature.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.SkyTemperature.duplicate">
+<code class="descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.SkyTemperature.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the data type.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.datatype.temperature.SkyTemperature.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.SkyTemperature.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a data type from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># data type name of the data type as a string</span>
+    <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the class name of the data type as a string</span>
+    <span class="s2">&quot;base_unit&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the base unit of the data type</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.SkyTemperature.is_in_range">
+<code class="descname">is_in_range</code><span class="sig-paren">(</span><em>values</em>, <em>unit=None</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.SkyTemperature.is_in_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a list of values is within physically/mathematically possible range.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>values</strong> – A list of values.</li>
+<li><strong>unit</strong> – The unit of the values.  If not specified, the default metric
+unit will be assumed.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not in range.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.SkyTemperature.is_unit_acceptable">
+<code class="descname">is_unit_acceptable</code><span class="sig-paren">(</span><em>unit</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.SkyTemperature.is_unit_acceptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a certain unit is acceptable for the data type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>unit</strong> – A text string representing the abbreviated unit.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not acceptable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.SkyTemperature.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.SkyTemperature.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data type as a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.SkyTemperature.to_ip">
+<code class="descname">to_ip</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.SkyTemperature.to_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in IP and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.SkyTemperature.to_si">
+<code class="descname">to_si</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.SkyTemperature.to_si" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in SI and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.SkyTemperature.to_unit">
+<code class="descname">to_unit</code><span class="sig-paren">(</span><em>values</em>, <em>unit</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.SkyTemperature.to_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values converted to the unit given the input from_unit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.SkyTemperature.abbreviation">
+<code class="descname">abbreviation</code><a class="headerlink" href="#ladybug.datatype.temperature.SkyTemperature.abbreviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional abbreviation for the data type as text.</p>
+<p>(eg. ‘UTCI’ for Universal Thermal Climate Index).
+This can also be a letter that represents the data type in a formula.
+(eg. ‘A’ for Area; ‘P’ for Pressure)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.SkyTemperature.cumulative">
+<code class="descname">cumulative</code><a class="headerlink" href="#ladybug.datatype.temperature.SkyTemperature.cumulative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is cumulative.</p>
+<p>A Boolean indicates that the data type can be cumulative when it
+is represented over time (True) or it can only be averaged over time
+to be meaningful (False). Note that cumulative cannot be True
+when point_in_time is also True.
+(False Examples: Temperature, Irradiance, Illuminance)
+(True Examples: Energy, Radiation)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.SkyTemperature.ip_units">
+<code class="descname">ip_units</code><a class="headerlink" href="#ladybug.datatype.temperature.SkyTemperature.ip_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable ip_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.SkyTemperature.isDataType">
+<code class="descname">isDataType</code><a class="headerlink" href="#ladybug.datatype.temperature.SkyTemperature.isDataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.SkyTemperature.isTemperature">
+<code class="descname">isTemperature</code><a class="headerlink" href="#ladybug.datatype.temperature.SkyTemperature.isTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.SkyTemperature.max">
+<code class="descname">max</code><a class="headerlink" href="#ladybug.datatype.temperature.SkyTemperature.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper limit for the data type.</p>
+<p>Values above upper limit should be physically
+or mathematically impossible. (Default: +inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.SkyTemperature.min">
+<code class="descname">min</code><a class="headerlink" href="#ladybug.datatype.temperature.SkyTemperature.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower limit for the data type.</p>
+<p>Values below lower limit should be physically
+or mathematically impossible. (Default: -inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.SkyTemperature.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.datatype.temperature.SkyTemperature.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full name of the data type as a string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.SkyTemperature.point_in_time">
+<code class="descname">point_in_time</code><a class="headerlink" href="#ladybug.datatype.temperature.SkyTemperature.point_in_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is point_in_time.</p>
+<p>A Boolean indicates that the data type represents conditions
+at a single instant in time (True) or at an average or
+accumulation over time (False) when found in hourly lists of data.
+(True Examples: Temperature, WindSpeed)
+(False Examples: Energy, Radiation, Illuminance)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.SkyTemperature.si_units">
+<code class="descname">si_units</code><a class="headerlink" href="#ladybug.datatype.temperature.SkyTemperature.si_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable si_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.SkyTemperature.unit_descr">
+<code class="descname">unit_descr</code><a class="headerlink" href="#ladybug.datatype.temperature.SkyTemperature.unit_descr" title="Permalink to this definition">¶</a></dt>
+<dd><p>A description of the data type units</p>
+<p>A dictionary is used to describe categories that the numerical values of
+the units relate to.
+This is useful if numerical values of the units relate to specific categories.
+(eg. -1 = Cold, 0 = Neutral, +1 = Hot) (eg. 0 = False, 1 = True).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.SkyTemperature.units">
+<code class="descname">units</code><a class="headerlink" href="#ladybug.datatype.temperature.SkyTemperature.units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of all accetpable units of the data type as abbreviated text.</p>
+<p>The first item of the list should be the standard SI unit.
+The second item of the list should be the stadard IP unit (if it exists).
+The rest of the list can be any other acceptable units.
+(eg. [C, F, K])</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.datatype.temperature.StandardEffectiveTemperature">
+<em class="property">class </em><code class="descclassname">ladybug.datatype.temperature.</code><code class="descname">StandardEffectiveTemperature</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/temperature.html#StandardEffectiveTemperature"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.temperature.StandardEffectiveTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ladybug.datatype.temperature.Temperature" title="ladybug.datatype.temperature.Temperature"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.datatype.temperature.Temperature</span></code></a></p>
+<dl class="method">
+<dt id="ladybug.datatype.temperature.StandardEffectiveTemperature.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.StandardEffectiveTemperature.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.StandardEffectiveTemperature.duplicate">
+<code class="descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.StandardEffectiveTemperature.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the data type.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.datatype.temperature.StandardEffectiveTemperature.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.StandardEffectiveTemperature.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a data type from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># data type name of the data type as a string</span>
+    <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the class name of the data type as a string</span>
+    <span class="s2">&quot;base_unit&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the base unit of the data type</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.StandardEffectiveTemperature.is_in_range">
+<code class="descname">is_in_range</code><span class="sig-paren">(</span><em>values</em>, <em>unit=None</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.StandardEffectiveTemperature.is_in_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a list of values is within physically/mathematically possible range.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>values</strong> – A list of values.</li>
+<li><strong>unit</strong> – The unit of the values.  If not specified, the default metric
+unit will be assumed.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not in range.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.StandardEffectiveTemperature.is_unit_acceptable">
+<code class="descname">is_unit_acceptable</code><span class="sig-paren">(</span><em>unit</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.StandardEffectiveTemperature.is_unit_acceptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a certain unit is acceptable for the data type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>unit</strong> – A text string representing the abbreviated unit.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not acceptable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.StandardEffectiveTemperature.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.StandardEffectiveTemperature.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data type as a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.StandardEffectiveTemperature.to_ip">
+<code class="descname">to_ip</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.StandardEffectiveTemperature.to_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in IP and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.StandardEffectiveTemperature.to_si">
+<code class="descname">to_si</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.StandardEffectiveTemperature.to_si" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in SI and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.StandardEffectiveTemperature.to_unit">
+<code class="descname">to_unit</code><span class="sig-paren">(</span><em>values</em>, <em>unit</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.StandardEffectiveTemperature.to_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values converted to the unit given the input from_unit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.StandardEffectiveTemperature.abbreviation">
+<code class="descname">abbreviation</code><a class="headerlink" href="#ladybug.datatype.temperature.StandardEffectiveTemperature.abbreviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional abbreviation for the data type as text.</p>
+<p>(eg. ‘UTCI’ for Universal Thermal Climate Index).
+This can also be a letter that represents the data type in a formula.
+(eg. ‘A’ for Area; ‘P’ for Pressure)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.StandardEffectiveTemperature.cumulative">
+<code class="descname">cumulative</code><a class="headerlink" href="#ladybug.datatype.temperature.StandardEffectiveTemperature.cumulative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is cumulative.</p>
+<p>A Boolean indicates that the data type can be cumulative when it
+is represented over time (True) or it can only be averaged over time
+to be meaningful (False). Note that cumulative cannot be True
+when point_in_time is also True.
+(False Examples: Temperature, Irradiance, Illuminance)
+(True Examples: Energy, Radiation)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.StandardEffectiveTemperature.ip_units">
+<code class="descname">ip_units</code><a class="headerlink" href="#ladybug.datatype.temperature.StandardEffectiveTemperature.ip_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable ip_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.StandardEffectiveTemperature.isDataType">
+<code class="descname">isDataType</code><a class="headerlink" href="#ladybug.datatype.temperature.StandardEffectiveTemperature.isDataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.StandardEffectiveTemperature.isTemperature">
+<code class="descname">isTemperature</code><a class="headerlink" href="#ladybug.datatype.temperature.StandardEffectiveTemperature.isTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.StandardEffectiveTemperature.max">
+<code class="descname">max</code><a class="headerlink" href="#ladybug.datatype.temperature.StandardEffectiveTemperature.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper limit for the data type.</p>
+<p>Values above upper limit should be physically
+or mathematically impossible. (Default: +inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.StandardEffectiveTemperature.min">
+<code class="descname">min</code><a class="headerlink" href="#ladybug.datatype.temperature.StandardEffectiveTemperature.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower limit for the data type.</p>
+<p>Values below lower limit should be physically
+or mathematically impossible. (Default: -inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.StandardEffectiveTemperature.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.datatype.temperature.StandardEffectiveTemperature.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full name of the data type as a string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.StandardEffectiveTemperature.point_in_time">
+<code class="descname">point_in_time</code><a class="headerlink" href="#ladybug.datatype.temperature.StandardEffectiveTemperature.point_in_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is point_in_time.</p>
+<p>A Boolean indicates that the data type represents conditions
+at a single instant in time (True) or at an average or
+accumulation over time (False) when found in hourly lists of data.
+(True Examples: Temperature, WindSpeed)
+(False Examples: Energy, Radiation, Illuminance)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.StandardEffectiveTemperature.si_units">
+<code class="descname">si_units</code><a class="headerlink" href="#ladybug.datatype.temperature.StandardEffectiveTemperature.si_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable si_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.StandardEffectiveTemperature.unit_descr">
+<code class="descname">unit_descr</code><a class="headerlink" href="#ladybug.datatype.temperature.StandardEffectiveTemperature.unit_descr" title="Permalink to this definition">¶</a></dt>
+<dd><p>A description of the data type units</p>
+<p>A dictionary is used to describe categories that the numerical values of
+the units relate to.
+This is useful if numerical values of the units relate to specific categories.
+(eg. -1 = Cold, 0 = Neutral, +1 = Hot) (eg. 0 = False, 1 = True).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.StandardEffectiveTemperature.units">
+<code class="descname">units</code><a class="headerlink" href="#ladybug.datatype.temperature.StandardEffectiveTemperature.units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of all accetpable units of the data type as abbreviated text.</p>
+<p>The first item of the list should be the standard SI unit.
+The second item of the list should be the stadard IP unit (if it exists).
+The rest of the list can be any other acceptable units.
+(eg. [C, F, K])</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.datatype.temperature.Temperature">
+<em class="property">class </em><code class="descclassname">ladybug.datatype.temperature.</code><code class="descname">Temperature</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/temperature.html#Temperature"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.temperature.Temperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ladybug.datatype.base.html#ladybug.datatype.base.DataTypeBase" title="ladybug.datatype.base.DataTypeBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.datatype.base.DataTypeBase</span></code></a></p>
+<dl class="method">
+<dt id="ladybug.datatype.temperature.Temperature.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.Temperature.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.Temperature.duplicate">
+<code class="descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.Temperature.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the data type.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.datatype.temperature.Temperature.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.Temperature.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a data type from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># data type name of the data type as a string</span>
+    <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the class name of the data type as a string</span>
+    <span class="s2">&quot;base_unit&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the base unit of the data type</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.Temperature.is_in_range">
+<code class="descname">is_in_range</code><span class="sig-paren">(</span><em>values</em>, <em>unit=None</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.Temperature.is_in_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a list of values is within physically/mathematically possible range.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>values</strong> – A list of values.</li>
+<li><strong>unit</strong> – The unit of the values.  If not specified, the default metric
+unit will be assumed.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not in range.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.Temperature.is_unit_acceptable">
+<code class="descname">is_unit_acceptable</code><span class="sig-paren">(</span><em>unit</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.Temperature.is_unit_acceptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a certain unit is acceptable for the data type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>unit</strong> – A text string representing the abbreviated unit.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not acceptable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.Temperature.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.Temperature.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data type as a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.Temperature.to_ip">
+<code class="descname">to_ip</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/temperature.html#Temperature.to_ip"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.temperature.Temperature.to_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in IP and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.Temperature.to_si">
+<code class="descname">to_si</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/temperature.html#Temperature.to_si"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.temperature.Temperature.to_si" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in SI and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.Temperature.to_unit">
+<code class="descname">to_unit</code><span class="sig-paren">(</span><em>values</em>, <em>unit</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/temperature.html#Temperature.to_unit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.temperature.Temperature.to_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values converted to the unit given the input from_unit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.Temperature.abbreviation">
+<code class="descname">abbreviation</code><a class="headerlink" href="#ladybug.datatype.temperature.Temperature.abbreviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional abbreviation for the data type as text.</p>
+<p>(eg. ‘UTCI’ for Universal Thermal Climate Index).
+This can also be a letter that represents the data type in a formula.
+(eg. ‘A’ for Area; ‘P’ for Pressure)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.Temperature.cumulative">
+<code class="descname">cumulative</code><a class="headerlink" href="#ladybug.datatype.temperature.Temperature.cumulative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is cumulative.</p>
+<p>A Boolean indicates that the data type can be cumulative when it
+is represented over time (True) or it can only be averaged over time
+to be meaningful (False). Note that cumulative cannot be True
+when point_in_time is also True.
+(False Examples: Temperature, Irradiance, Illuminance)
+(True Examples: Energy, Radiation)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.Temperature.ip_units">
+<code class="descname">ip_units</code><a class="headerlink" href="#ladybug.datatype.temperature.Temperature.ip_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable ip_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.Temperature.isDataType">
+<code class="descname">isDataType</code><a class="headerlink" href="#ladybug.datatype.temperature.Temperature.isDataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.Temperature.isTemperature">
+<code class="descname">isTemperature</code><a class="headerlink" href="#ladybug.datatype.temperature.Temperature.isTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.Temperature.max">
+<code class="descname">max</code><a class="headerlink" href="#ladybug.datatype.temperature.Temperature.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper limit for the data type.</p>
+<p>Values above upper limit should be physically
+or mathematically impossible. (Default: +inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.Temperature.min">
+<code class="descname">min</code><a class="headerlink" href="#ladybug.datatype.temperature.Temperature.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower limit for the data type.</p>
+<p>Values below lower limit should be physically
+or mathematically impossible. (Default: -inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.Temperature.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.datatype.temperature.Temperature.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full name of the data type as a string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.Temperature.point_in_time">
+<code class="descname">point_in_time</code><a class="headerlink" href="#ladybug.datatype.temperature.Temperature.point_in_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is point_in_time.</p>
+<p>A Boolean indicates that the data type represents conditions
+at a single instant in time (True) or at an average or
+accumulation over time (False) when found in hourly lists of data.
+(True Examples: Temperature, WindSpeed)
+(False Examples: Energy, Radiation, Illuminance)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.Temperature.si_units">
+<code class="descname">si_units</code><a class="headerlink" href="#ladybug.datatype.temperature.Temperature.si_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable si_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.Temperature.unit_descr">
+<code class="descname">unit_descr</code><a class="headerlink" href="#ladybug.datatype.temperature.Temperature.unit_descr" title="Permalink to this definition">¶</a></dt>
+<dd><p>A description of the data type units</p>
+<p>A dictionary is used to describe categories that the numerical values of
+the units relate to.
+This is useful if numerical values of the units relate to specific categories.
+(eg. -1 = Cold, 0 = Neutral, +1 = Hot) (eg. 0 = False, 1 = True).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.Temperature.units">
+<code class="descname">units</code><a class="headerlink" href="#ladybug.datatype.temperature.Temperature.units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of all accetpable units of the data type as abbreviated text.</p>
+<p>The first item of the list should be the standard SI unit.
+The second item of the list should be the stadard IP unit (if it exists).
+The rest of the list can be any other acceptable units.
+(eg. [C, F, K])</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.datatype.temperature.UniversalThermalClimateIndex">
+<em class="property">class </em><code class="descclassname">ladybug.datatype.temperature.</code><code class="descname">UniversalThermalClimateIndex</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/temperature.html#UniversalThermalClimateIndex"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.temperature.UniversalThermalClimateIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ladybug.datatype.temperature.Temperature" title="ladybug.datatype.temperature.Temperature"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.datatype.temperature.Temperature</span></code></a></p>
+<dl class="method">
+<dt id="ladybug.datatype.temperature.UniversalThermalClimateIndex.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.UniversalThermalClimateIndex.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.UniversalThermalClimateIndex.duplicate">
+<code class="descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.UniversalThermalClimateIndex.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the data type.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.datatype.temperature.UniversalThermalClimateIndex.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.UniversalThermalClimateIndex.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a data type from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># data type name of the data type as a string</span>
+    <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the class name of the data type as a string</span>
+    <span class="s2">&quot;base_unit&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the base unit of the data type</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.UniversalThermalClimateIndex.is_in_range">
+<code class="descname">is_in_range</code><span class="sig-paren">(</span><em>values</em>, <em>unit=None</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.UniversalThermalClimateIndex.is_in_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a list of values is within physically/mathematically possible range.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>values</strong> – A list of values.</li>
+<li><strong>unit</strong> – The unit of the values.  If not specified, the default metric
+unit will be assumed.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not in range.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.UniversalThermalClimateIndex.is_unit_acceptable">
+<code class="descname">is_unit_acceptable</code><span class="sig-paren">(</span><em>unit</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.UniversalThermalClimateIndex.is_unit_acceptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a certain unit is acceptable for the data type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>unit</strong> – A text string representing the abbreviated unit.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not acceptable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.UniversalThermalClimateIndex.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.UniversalThermalClimateIndex.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data type as a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.UniversalThermalClimateIndex.to_ip">
+<code class="descname">to_ip</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.UniversalThermalClimateIndex.to_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in IP and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.UniversalThermalClimateIndex.to_si">
+<code class="descname">to_si</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.UniversalThermalClimateIndex.to_si" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in SI and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.UniversalThermalClimateIndex.to_unit">
+<code class="descname">to_unit</code><span class="sig-paren">(</span><em>values</em>, <em>unit</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.UniversalThermalClimateIndex.to_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values converted to the unit given the input from_unit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.UniversalThermalClimateIndex.abbreviation">
+<code class="descname">abbreviation</code><a class="headerlink" href="#ladybug.datatype.temperature.UniversalThermalClimateIndex.abbreviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional abbreviation for the data type as text.</p>
+<p>(eg. ‘UTCI’ for Universal Thermal Climate Index).
+This can also be a letter that represents the data type in a formula.
+(eg. ‘A’ for Area; ‘P’ for Pressure)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.UniversalThermalClimateIndex.cumulative">
+<code class="descname">cumulative</code><a class="headerlink" href="#ladybug.datatype.temperature.UniversalThermalClimateIndex.cumulative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is cumulative.</p>
+<p>A Boolean indicates that the data type can be cumulative when it
+is represented over time (True) or it can only be averaged over time
+to be meaningful (False). Note that cumulative cannot be True
+when point_in_time is also True.
+(False Examples: Temperature, Irradiance, Illuminance)
+(True Examples: Energy, Radiation)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.UniversalThermalClimateIndex.ip_units">
+<code class="descname">ip_units</code><a class="headerlink" href="#ladybug.datatype.temperature.UniversalThermalClimateIndex.ip_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable ip_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.UniversalThermalClimateIndex.isDataType">
+<code class="descname">isDataType</code><a class="headerlink" href="#ladybug.datatype.temperature.UniversalThermalClimateIndex.isDataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.UniversalThermalClimateIndex.isTemperature">
+<code class="descname">isTemperature</code><a class="headerlink" href="#ladybug.datatype.temperature.UniversalThermalClimateIndex.isTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.UniversalThermalClimateIndex.max">
+<code class="descname">max</code><a class="headerlink" href="#ladybug.datatype.temperature.UniversalThermalClimateIndex.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper limit for the data type.</p>
+<p>Values above upper limit should be physically
+or mathematically impossible. (Default: +inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.UniversalThermalClimateIndex.min">
+<code class="descname">min</code><a class="headerlink" href="#ladybug.datatype.temperature.UniversalThermalClimateIndex.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower limit for the data type.</p>
+<p>Values below lower limit should be physically
+or mathematically impossible. (Default: -inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.UniversalThermalClimateIndex.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.datatype.temperature.UniversalThermalClimateIndex.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full name of the data type as a string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.UniversalThermalClimateIndex.point_in_time">
+<code class="descname">point_in_time</code><a class="headerlink" href="#ladybug.datatype.temperature.UniversalThermalClimateIndex.point_in_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is point_in_time.</p>
+<p>A Boolean indicates that the data type represents conditions
+at a single instant in time (True) or at an average or
+accumulation over time (False) when found in hourly lists of data.
+(True Examples: Temperature, WindSpeed)
+(False Examples: Energy, Radiation, Illuminance)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.UniversalThermalClimateIndex.si_units">
+<code class="descname">si_units</code><a class="headerlink" href="#ladybug.datatype.temperature.UniversalThermalClimateIndex.si_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable si_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.UniversalThermalClimateIndex.unit_descr">
+<code class="descname">unit_descr</code><a class="headerlink" href="#ladybug.datatype.temperature.UniversalThermalClimateIndex.unit_descr" title="Permalink to this definition">¶</a></dt>
+<dd><p>A description of the data type units</p>
+<p>A dictionary is used to describe categories that the numerical values of
+the units relate to.
+This is useful if numerical values of the units relate to specific categories.
+(eg. -1 = Cold, 0 = Neutral, +1 = Hot) (eg. 0 = False, 1 = True).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.UniversalThermalClimateIndex.units">
+<code class="descname">units</code><a class="headerlink" href="#ladybug.datatype.temperature.UniversalThermalClimateIndex.units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of all accetpable units of the data type as abbreviated text.</p>
+<p>The first item of the list should be the standard SI unit.
+The second item of the list should be the stadard IP unit (if it exists).
+The rest of the list can be any other acceptable units.
+(eg. [C, F, K])</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.datatype.temperature.WetBulbTemperature">
+<em class="property">class </em><code class="descclassname">ladybug.datatype.temperature.</code><code class="descname">WetBulbTemperature</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/temperature.html#WetBulbTemperature"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.temperature.WetBulbTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ladybug.datatype.temperature.Temperature" title="ladybug.datatype.temperature.Temperature"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.datatype.temperature.Temperature</span></code></a></p>
+<dl class="method">
+<dt id="ladybug.datatype.temperature.WetBulbTemperature.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.WetBulbTemperature.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.WetBulbTemperature.duplicate">
+<code class="descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.WetBulbTemperature.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the data type.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.datatype.temperature.WetBulbTemperature.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.WetBulbTemperature.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a data type from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># data type name of the data type as a string</span>
+    <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the class name of the data type as a string</span>
+    <span class="s2">&quot;base_unit&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the base unit of the data type</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.WetBulbTemperature.is_in_range">
+<code class="descname">is_in_range</code><span class="sig-paren">(</span><em>values</em>, <em>unit=None</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.WetBulbTemperature.is_in_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a list of values is within physically/mathematically possible range.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>values</strong> – A list of values.</li>
+<li><strong>unit</strong> – The unit of the values.  If not specified, the default metric
+unit will be assumed.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not in range.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.WetBulbTemperature.is_unit_acceptable">
+<code class="descname">is_unit_acceptable</code><span class="sig-paren">(</span><em>unit</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.WetBulbTemperature.is_unit_acceptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a certain unit is acceptable for the data type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>unit</strong> – A text string representing the abbreviated unit.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not acceptable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.WetBulbTemperature.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.WetBulbTemperature.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data type as a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.WetBulbTemperature.to_ip">
+<code class="descname">to_ip</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.WetBulbTemperature.to_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in IP and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.WetBulbTemperature.to_si">
+<code class="descname">to_si</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.WetBulbTemperature.to_si" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in SI and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.temperature.WetBulbTemperature.to_unit">
+<code class="descname">to_unit</code><span class="sig-paren">(</span><em>values</em>, <em>unit</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.temperature.WetBulbTemperature.to_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values converted to the unit given the input from_unit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.WetBulbTemperature.abbreviation">
+<code class="descname">abbreviation</code><a class="headerlink" href="#ladybug.datatype.temperature.WetBulbTemperature.abbreviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional abbreviation for the data type as text.</p>
+<p>(eg. ‘UTCI’ for Universal Thermal Climate Index).
+This can also be a letter that represents the data type in a formula.
+(eg. ‘A’ for Area; ‘P’ for Pressure)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.WetBulbTemperature.cumulative">
+<code class="descname">cumulative</code><a class="headerlink" href="#ladybug.datatype.temperature.WetBulbTemperature.cumulative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is cumulative.</p>
+<p>A Boolean indicates that the data type can be cumulative when it
+is represented over time (True) or it can only be averaged over time
+to be meaningful (False). Note that cumulative cannot be True
+when point_in_time is also True.
+(False Examples: Temperature, Irradiance, Illuminance)
+(True Examples: Energy, Radiation)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.WetBulbTemperature.ip_units">
+<code class="descname">ip_units</code><a class="headerlink" href="#ladybug.datatype.temperature.WetBulbTemperature.ip_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable ip_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.WetBulbTemperature.isDataType">
+<code class="descname">isDataType</code><a class="headerlink" href="#ladybug.datatype.temperature.WetBulbTemperature.isDataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.WetBulbTemperature.isTemperature">
+<code class="descname">isTemperature</code><a class="headerlink" href="#ladybug.datatype.temperature.WetBulbTemperature.isTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.WetBulbTemperature.max">
+<code class="descname">max</code><a class="headerlink" href="#ladybug.datatype.temperature.WetBulbTemperature.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper limit for the data type.</p>
+<p>Values above upper limit should be physically
+or mathematically impossible. (Default: +inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.WetBulbTemperature.min">
+<code class="descname">min</code><a class="headerlink" href="#ladybug.datatype.temperature.WetBulbTemperature.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower limit for the data type.</p>
+<p>Values below lower limit should be physically
+or mathematically impossible. (Default: -inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.WetBulbTemperature.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.datatype.temperature.WetBulbTemperature.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full name of the data type as a string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.WetBulbTemperature.point_in_time">
+<code class="descname">point_in_time</code><a class="headerlink" href="#ladybug.datatype.temperature.WetBulbTemperature.point_in_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is point_in_time.</p>
+<p>A Boolean indicates that the data type represents conditions
+at a single instant in time (True) or at an average or
+accumulation over time (False) when found in hourly lists of data.
+(True Examples: Temperature, WindSpeed)
+(False Examples: Energy, Radiation, Illuminance)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.WetBulbTemperature.si_units">
+<code class="descname">si_units</code><a class="headerlink" href="#ladybug.datatype.temperature.WetBulbTemperature.si_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable si_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.WetBulbTemperature.unit_descr">
+<code class="descname">unit_descr</code><a class="headerlink" href="#ladybug.datatype.temperature.WetBulbTemperature.unit_descr" title="Permalink to this definition">¶</a></dt>
+<dd><p>A description of the data type units</p>
+<p>A dictionary is used to describe categories that the numerical values of
+the units relate to.
+This is useful if numerical values of the units relate to specific categories.
+(eg. -1 = Cold, 0 = Neutral, +1 = Hot) (eg. 0 = False, 1 = True).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.temperature.WetBulbTemperature.units">
+<code class="descname">units</code><a class="headerlink" href="#ladybug.datatype.temperature.WetBulbTemperature.units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of all accetpable units of the data type as abbreviated text.</p>
+<p>The first item of the list should be the standard SI unit.
+The second item of the list should be the stadard IP unit (if it exists).
+The rest of the list can be any other acceptable units.
+(eg. [C, F, K])</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2019, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

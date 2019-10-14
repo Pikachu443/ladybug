@@ -1,0 +1,41 @@
+ladybug package
+===============
+
+Subpackages
+-----------
+
+.. toctree::
+
+    ladybug.datatype
+
+Submodules
+----------
+
+.. toctree::
+
+   ladybug.analysisperiod
+   ladybug.color
+   ladybug.datacollection
+   ladybug.datacollectionimmutable
+   ladybug.designday
+   ladybug.dt
+   ladybug.epw
+   ladybug.futil
+   ladybug.graphic
+   ladybug.header
+   ladybug.legend
+   ladybug.location
+   ladybug.psychrometrics
+   ladybug.rootfind
+   ladybug.skymodel
+   ladybug.stat
+   ladybug.sunpath
+   ladybug.wea
+
+Module contents
+---------------
+
+.. automodule:: ladybug
+    :members:
+    :undoc-members:
+    :show-inheritance:

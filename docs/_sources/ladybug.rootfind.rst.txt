@@ -1,0 +1,7 @@
+ladybug.rootfind module
+=======================
+
+.. automodule:: ladybug.rootfind
+    :members:
+    :undoc-members:
+    :show-inheritance:

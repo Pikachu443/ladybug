@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ladybug.sunpath module &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ladybug.wea module" href="ladybug.wea.html" />
+    <link rel="prev" title="ladybug.stat module" href="ladybug.stat.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfind.html">ladybug.rootfind module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfind.html">ladybug.rootfind module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="ladybug.stat.html" title="Previous Chapter: ladybug.stat module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; ladybug.stat module</span>
+    </a>
+  </li>
+  <li>
+    <a href="ladybug.wea.html" title="Next Chapter: ladybug.wea module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">ladybug.wea module &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/ladybug.sunpath.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfind.html">ladybug.rootfind module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-ladybug.sunpath">
+<span id="ladybug-sunpath-module"></span><h1>ladybug.sunpath module<a class="headerlink" href="#module-ladybug.sunpath" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="ladybug.sunpath.Sun">
+<em class="property">class </em><code class="descclassname">ladybug.sunpath.</code><code class="descname">Sun</code><span class="sig-paren">(</span><em>datetime</em>, <em>altitude</em>, <em>azimuth</em>, <em>is_solar_time</em>, <em>is_daylight_saving</em>, <em>north_angle</em>, <em>data=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sun"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sun" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Sun.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>datetime</strong> – A DateTime that represents the datetime for this sun_vector</li>
+<li><strong>altitude</strong> – Solar Altitude in <strong>radians</strong></li>
+<li><strong>azimuth</strong> – Solar Azimuth in <strong>radians</strong></li>
+<li><strong>is_solar_time</strong> – A Boolean that indicates if datetime represents the solar
+time.</li>
+<li><strong>is_daylight_saving</strong> – A Boolean that indicates if datetime is calculated
+for Daylight saving period</li>
+<li><strong>north_angle</strong> – North angle of the sunpath in Degrees. This will be only
+used to calculate the solar vector.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Properties:</dt>
+<dd><ul class="first last simple">
+<li>datetime</li>
+<li>north_angle</li>
+<li>hoy</li>
+<li>altitude</li>
+<li>azimuth</li>
+<li>altitude_in_radians</li>
+<li>azimuth_in_radians</li>
+<li>is_solar_time</li>
+<li>is_daylight_saving</li>
+<li>data</li>
+<li>is_during_day</li>
+<li>sun_vector</li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="ladybug.sunpath.Sun.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sun.ToString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sun.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString method.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.sunpath.Sun.PI">
+<code class="descname">PI</code><em class="property"> = 3.141592653589793</em><a class="headerlink" href="#ladybug.sunpath.Sun.PI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.sunpath.Sun.altitude">
+<code class="descname">altitude</code><a class="headerlink" href="#ladybug.sunpath.Sun.altitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return solar altitude in degrees.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.sunpath.Sun.altitude_in_radians">
+<code class="descname">altitude_in_radians</code><a class="headerlink" href="#ladybug.sunpath.Sun.altitude_in_radians" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return solar altitude in radians.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.sunpath.Sun.azimuth">
+<code class="descname">azimuth</code><a class="headerlink" href="#ladybug.sunpath.Sun.azimuth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return solar azimuth in degrees.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.sunpath.Sun.azimuth_in_radians">
+<code class="descname">azimuth_in_radians</code><a class="headerlink" href="#ladybug.sunpath.Sun.azimuth_in_radians" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return solar azimuth in radians.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.sunpath.Sun.data">
+<code class="descname">data</code><a class="headerlink" href="#ladybug.sunpath.Sun.data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set data to this sun position.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.sunpath.Sun.datetime">
+<code class="descname">datetime</code><a class="headerlink" href="#ladybug.sunpath.Sun.datetime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return datetime.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.sunpath.Sun.hoy">
+<code class="descname">hoy</code><a class="headerlink" href="#ladybug.sunpath.Sun.hoy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return Hour of the year.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.sunpath.Sun.is_daylight_saving">
+<code class="descname">is_daylight_saving</code><a class="headerlink" href="#ladybug.sunpath.Sun.is_daylight_saving" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a Boolean that indicates is datetime is solar time.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.sunpath.Sun.is_during_day">
+<code class="descname">is_during_day</code><a class="headerlink" href="#ladybug.sunpath.Sun.is_during_day" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if this sun position is during day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.sunpath.Sun.is_solar_time">
+<code class="descname">is_solar_time</code><a class="headerlink" href="#ladybug.sunpath.Sun.is_solar_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a Boolean that indicates is datetime is solar time.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.sunpath.Sun.north_angle">
+<code class="descname">north_angle</code><a class="headerlink" href="#ladybug.sunpath.Sun.north_angle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return north angle for +YAxis.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.sunpath.Sun.sun_vector">
+<code class="descname">sun_vector</code><a class="headerlink" href="#ladybug.sunpath.Sun.sun_vector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sun vector for this sun.</p>
+<p>Sun vector faces downward(e.g. z will be negative.)</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.sunpath.Sunpath">
+<em class="property">class </em><code class="descclassname">ladybug.sunpath.</code><code class="descname">Sunpath</code><span class="sig-paren">(</span><em>latitude=0</em>, <em>longitude=0</em>, <em>time_zone=0</em>, <em>north_angle=0</em>, <em>daylight_saving_period=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Calculates sun path.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>latitude</strong> – The latitude of the location in degrees. Values must be
+between -90 and 90. Default is set to the equator.</li>
+<li><strong>longitude</strong> – The longitude of the location in degrees (Default: 0)</li>
+<li><strong>time_zone</strong> – A number representing the time zone of the location you are
+constructing. This can improve the accuracy of the resulting sun
+plot.  The time zone should follow the epw convention and should be
+between -12 and +12, where 0 is at Greenwich, UK, positive values
+are to the East of Greenwich and negative values are to the West.</li>
+<li><strong>north_angle</strong> – Angle to north (0-360). 90 is west and 270 is east
+(Default: 0)</li>
+<li><strong>daylight_saving_period</strong> – An analysis period for daylight saving.
+(Default: None)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Properties:</dt>
+<dd><ul class="first last simple">
+<li>daylight_saving_period</li>
+<li>is_leap_year</li>
+<li>latitude</li>
+<li>longitude</li>
+<li>north_angle</li>
+<li>time_zone</li>
+</ul>
+</dd>
+</dl>
+<p>Usage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">ladybug.sunpath</span> <span class="kn">as</span> <span class="nn">sunpath</span>
+<span class="c1"># initiate sunpath</span>
+<span class="n">sp</span> <span class="o">=</span> <span class="n">sunpath</span><span class="o">.</span><span class="n">Sunpath</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">sun</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">calculate_sun</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span> <span class="c1"># calculate sun data for Jan 1 at noon</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sun</span><span class="o">.</span><span class="n">azimuth</span><span class="p">,</span> <span class="n">sun</span><span class="o">.</span><span class="n">altitude</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="ladybug.sunpath.Sunpath.calculate_sun">
+<code class="descname">calculate_sun</code><span class="sig-paren">(</span><em>month</em>, <em>day</em>, <em>hour</em>, <em>is_solar_time=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.calculate_sun"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.calculate_sun" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get Sun data for an hour of the year.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>month</strong> – An integer between 1-12</li>
+<li><strong>day</strong> – An integer between 1-31</li>
+<li><strong>hour</strong> – A positive number between 0..23</li>
+<li><strong>is_solar_time</strong> – A boolean to indicate if the input hour is solar time.
+(Default: False)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A sun object for this particular time</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.sunpath.Sunpath.calculate_sun_from_date_time">
+<code class="descname">calculate_sun_from_date_time</code><span class="sig-paren">(</span><em>datetime</em>, <em>is_solar_time=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.calculate_sun_from_date_time"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.calculate_sun_from_date_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get Sun for an hour of the year.</p>
+<p>This code is originally written by Trygve Wastvedt          (<a class="reference external" href="mailto:Trygve&#46;Wastvedt&#37;&#52;&#48;gmail&#46;com">Trygve<span>&#46;</span>Wastvedt<span>&#64;</span>gmail<span>&#46;</span>com</a>)
+based on (NOAA) and modified by Chris Mackey and Mostapha Roudsari</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>datetime</strong> – Ladybug datetime</li>
+<li><strong>is_solar_time</strong> – A boolean to indicate if the input hour is solar time.
+(Default: False)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A sun object for this particular time</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.sunpath.Sunpath.calculate_sun_from_hoy">
+<code class="descname">calculate_sun_from_hoy</code><span class="sig-paren">(</span><em>hoy</em>, <em>is_solar_time=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.calculate_sun_from_hoy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.calculate_sun_from_hoy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get Sun data for an hour of the year.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>datetime</strong> – Ladybug datetime</li>
+<li><strong>is_solar_time</strong> – A boolean to indicate if the input hour is solar time
+(Default: False).</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A sun object for this particular time</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.sunpath.Sunpath.calculate_sunrise_sunset">
+<code class="descname">calculate_sunrise_sunset</code><span class="sig-paren">(</span><em>month</em>, <em>day</em>, <em>depression=0.833</em>, <em>is_solar_time=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.calculate_sunrise_sunset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.calculate_sunrise_sunset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate sunrise, noon and sunset.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A dictionary. Keys are (“sunrise”, “noon”, “sunset”)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.sunpath.Sunpath.calculate_sunrise_sunset_from_datetime">
+<code class="descname">calculate_sunrise_sunset_from_datetime</code><span class="sig-paren">(</span><em>datetime</em>, <em>depression=0.833</em>, <em>is_solar_time=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.calculate_sunrise_sunset_from_datetime"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.calculate_sunrise_sunset_from_datetime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate sunrise, sunset and noon for a day of year.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.sunpath.Sunpath.draw_sunpath">
+<code class="descname">draw_sunpath</code><span class="sig-paren">(</span><em>hoys=None</em>, <em>origin=None</em>, <em>scale=1</em>, <em>sun_scale=1</em>, <em>annual=True</em>, <em>rem_night=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.draw_sunpath"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.draw_sunpath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create sunpath geometry.         This method should only be used from the + libraries.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>hoys</strong> – An optional list of hours of the year(default: None).</li>
+<li><strong>origin</strong> – Sunpath origin(default: (0, 0, 0)).</li>
+<li><strong>scale</strong> – Sunpath scale(default: 1).</li>
+<li><strong>sun_scale</strong> – Scale for the sun spheres(default: 1).</li>
+<li><strong>annual</strong> – Set to True to draw an annual sunpath.
+Otherwise a daily sunpath is drawn.</li>
+<li><strong>rem_night</strong> – Remove suns which are under the horizon(night!).</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><p>A tuple with four elements</p>
+<ul class="simple">
+<li>base_curves: A collection of curves for base plot.</li>
+<li>analemma_curves: A collection of analemma_curves.</li>
+<li>daily_curves: A collection of daily_curves.</li>
+<li>suns: A list of suns.</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.sunpath.Sunpath.from_location">
+<em class="property">classmethod </em><code class="descname">from_location</code><span class="sig-paren">(</span><em>location</em>, <em>north_angle=0</em>, <em>daylight_saving_period=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.from_location"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.from_location" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a sun path from a LBlocation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.sunpath.Sunpath.is_daylight_saving_hour">
+<code class="descname">is_daylight_saving_hour</code><span class="sig-paren">(</span><em>datetime</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/sunpath.html#Sunpath.is_daylight_saving_hour"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.sunpath.Sunpath.is_daylight_saving_hour" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a datetime is a daylight saving time.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.sunpath.Sunpath.PI">
+<code class="descname">PI</code><em class="property"> = 3.141592653589793</em><a class="headerlink" href="#ladybug.sunpath.Sunpath.PI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.sunpath.Sunpath.daylight_saving_period">
+<code class="descname">daylight_saving_period</code><a class="headerlink" href="#ladybug.sunpath.Sunpath.daylight_saving_period" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.sunpath.Sunpath.is_leap_year">
+<code class="descname">is_leap_year</code><a class="headerlink" href="#ladybug.sunpath.Sunpath.is_leap_year" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicate is sunpath calculated for a leap year.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.sunpath.Sunpath.latitude">
+<code class="descname">latitude</code><a class="headerlink" href="#ladybug.sunpath.Sunpath.latitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get/set latitude in degrees.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.sunpath.Sunpath.longitude">
+<code class="descname">longitude</code><a class="headerlink" href="#ladybug.sunpath.Sunpath.longitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get longitude in degrees.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.sunpath.Sunpath.north_angle">
+<code class="descname">north_angle</code><a class="headerlink" href="#ladybug.sunpath.Sunpath.north_angle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.sunpath.Sunpath.time_zone">
+<code class="descname">time_zone</code><a class="headerlink" href="#ladybug.sunpath.Sunpath.time_zone" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2019, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

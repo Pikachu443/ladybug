@@ -1,0 +1,1922 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ladybug.datatype.energyintensity module &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ladybug.datatype.fraction module" href="ladybug.datatype.fraction.html" />
+    <link rel="prev" title="ladybug.datatype.energyflux module" href="ladybug.datatype.energyflux.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfind.html">ladybug.rootfind module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="ladybug.datatype.energyflux.html" title="Previous Chapter: ladybug.datatype.energyflux module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; ladybug.datat...</span>
+    </a>
+  </li>
+  <li>
+    <a href="ladybug.datatype.fraction.html" title="Next Chapter: ladybug.datatype.fraction module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">ladybug.datat... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/ladybug.datatype.energyintensity.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-ladybug.datatype.energyintensity">
+<span id="ladybug-datatype-energyintensity-module"></span><h1>ladybug.datatype.energyintensity module<a class="headerlink" href="#module-ladybug.datatype.energyintensity" title="Permalink to this headline">¶</a></h1>
+<p>Energy intensity data type.</p>
+<dl class="class">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation">
+<em class="property">class </em><code class="descclassname">ladybug.datatype.energyintensity.</code><code class="descname">DiffuseHorizontalRadiation</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/energyintensity.html#DiffuseHorizontalRadiation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ladybug.datatype.energyintensity.Radiation" title="ladybug.datatype.energyintensity.Radiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.datatype.energyintensity.Radiation</span></code></a></p>
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.duplicate">
+<code class="descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the data type.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a data type from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># data type name of the data type as a string</span>
+    <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the class name of the data type as a string</span>
+    <span class="s2">&quot;base_unit&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the base unit of the data type</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.is_in_range">
+<code class="descname">is_in_range</code><span class="sig-paren">(</span><em>values</em>, <em>unit=None</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.is_in_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a list of values is within physically/mathematically possible range.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>values</strong> – A list of values.</li>
+<li><strong>unit</strong> – The unit of the values.  If not specified, the default metric
+unit will be assumed.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not in range.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.is_unit_acceptable">
+<code class="descname">is_unit_acceptable</code><span class="sig-paren">(</span><em>unit</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.is_unit_acceptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a certain unit is acceptable for the data type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>unit</strong> – A text string representing the abbreviated unit.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not acceptable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data type as a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.to_ip">
+<code class="descname">to_ip</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.to_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in IP and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.to_si">
+<code class="descname">to_si</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.to_si" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in SI and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.to_unit">
+<code class="descname">to_unit</code><span class="sig-paren">(</span><em>values</em>, <em>unit</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.to_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values converted to the unit given the input from_unit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.abbreviation">
+<code class="descname">abbreviation</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.abbreviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional abbreviation for the data type as text.</p>
+<p>(eg. ‘UTCI’ for Universal Thermal Climate Index).
+This can also be a letter that represents the data type in a formula.
+(eg. ‘A’ for Area; ‘P’ for Pressure)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.cumulative">
+<code class="descname">cumulative</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.cumulative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is cumulative.</p>
+<p>A Boolean indicates that the data type can be cumulative when it
+is represented over time (True) or it can only be averaged over time
+to be meaningful (False). Note that cumulative cannot be True
+when point_in_time is also True.
+(False Examples: Temperature, Irradiance, Illuminance)
+(True Examples: Energy, Radiation)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.ip_units">
+<code class="descname">ip_units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.ip_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable ip_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.isDataType">
+<code class="descname">isDataType</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.isDataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.isEnergyIntensity">
+<code class="descname">isEnergyIntensity</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.isEnergyIntensity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.isRadiation">
+<code class="descname">isRadiation</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.isRadiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.max">
+<code class="descname">max</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper limit for the data type.</p>
+<p>Values above upper limit should be physically
+or mathematically impossible. (Default: +inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.min">
+<code class="descname">min</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower limit for the data type.</p>
+<p>Values below lower limit should be physically
+or mathematically impossible. (Default: -inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full name of the data type as a string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.point_in_time">
+<code class="descname">point_in_time</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.point_in_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is point_in_time.</p>
+<p>A Boolean indicates that the data type represents conditions
+at a single instant in time (True) or at an average or
+accumulation over time (False) when found in hourly lists of data.
+(True Examples: Temperature, WindSpeed)
+(False Examples: Energy, Radiation, Illuminance)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.si_units">
+<code class="descname">si_units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.si_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable si_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.unit_descr">
+<code class="descname">unit_descr</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.unit_descr" title="Permalink to this definition">¶</a></dt>
+<dd><p>A description of the data type units</p>
+<p>A dictionary is used to describe categories that the numerical values of
+the units relate to.
+This is useful if numerical values of the units relate to specific categories.
+(eg. -1 = Cold, 0 = Neutral, +1 = Hot) (eg. 0 = False, 1 = True).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.units">
+<code class="descname">units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DiffuseHorizontalRadiation.units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of all accetpable units of the data type as abbreviated text.</p>
+<p>The first item of the list should be the standard SI unit.
+The second item of the list should be the stadard IP unit (if it exists).
+The rest of the list can be any other acceptable units.
+(eg. [C, F, K])</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation">
+<em class="property">class </em><code class="descclassname">ladybug.datatype.energyintensity.</code><code class="descname">DirectHorizontalRadiation</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/energyintensity.html#DirectHorizontalRadiation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ladybug.datatype.energyintensity.Radiation" title="ladybug.datatype.energyintensity.Radiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.datatype.energyintensity.Radiation</span></code></a></p>
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation.duplicate">
+<code class="descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the data type.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a data type from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># data type name of the data type as a string</span>
+    <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the class name of the data type as a string</span>
+    <span class="s2">&quot;base_unit&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the base unit of the data type</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation.is_in_range">
+<code class="descname">is_in_range</code><span class="sig-paren">(</span><em>values</em>, <em>unit=None</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation.is_in_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a list of values is within physically/mathematically possible range.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>values</strong> – A list of values.</li>
+<li><strong>unit</strong> – The unit of the values.  If not specified, the default metric
+unit will be assumed.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not in range.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation.is_unit_acceptable">
+<code class="descname">is_unit_acceptable</code><span class="sig-paren">(</span><em>unit</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation.is_unit_acceptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a certain unit is acceptable for the data type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>unit</strong> – A text string representing the abbreviated unit.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not acceptable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data type as a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation.to_ip">
+<code class="descname">to_ip</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation.to_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in IP and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation.to_si">
+<code class="descname">to_si</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation.to_si" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in SI and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation.to_unit">
+<code class="descname">to_unit</code><span class="sig-paren">(</span><em>values</em>, <em>unit</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation.to_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values converted to the unit given the input from_unit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation.abbreviation">
+<code class="descname">abbreviation</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation.abbreviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional abbreviation for the data type as text.</p>
+<p>(eg. ‘UTCI’ for Universal Thermal Climate Index).
+This can also be a letter that represents the data type in a formula.
+(eg. ‘A’ for Area; ‘P’ for Pressure)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation.cumulative">
+<code class="descname">cumulative</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation.cumulative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is cumulative.</p>
+<p>A Boolean indicates that the data type can be cumulative when it
+is represented over time (True) or it can only be averaged over time
+to be meaningful (False). Note that cumulative cannot be True
+when point_in_time is also True.
+(False Examples: Temperature, Irradiance, Illuminance)
+(True Examples: Energy, Radiation)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation.ip_units">
+<code class="descname">ip_units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation.ip_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable ip_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation.isDataType">
+<code class="descname">isDataType</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation.isDataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation.isEnergyIntensity">
+<code class="descname">isEnergyIntensity</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation.isEnergyIntensity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation.isRadiation">
+<code class="descname">isRadiation</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation.isRadiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation.max">
+<code class="descname">max</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper limit for the data type.</p>
+<p>Values above upper limit should be physically
+or mathematically impossible. (Default: +inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation.min">
+<code class="descname">min</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower limit for the data type.</p>
+<p>Values below lower limit should be physically
+or mathematically impossible. (Default: -inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full name of the data type as a string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation.point_in_time">
+<code class="descname">point_in_time</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation.point_in_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is point_in_time.</p>
+<p>A Boolean indicates that the data type represents conditions
+at a single instant in time (True) or at an average or
+accumulation over time (False) when found in hourly lists of data.
+(True Examples: Temperature, WindSpeed)
+(False Examples: Energy, Radiation, Illuminance)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation.si_units">
+<code class="descname">si_units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation.si_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable si_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation.unit_descr">
+<code class="descname">unit_descr</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation.unit_descr" title="Permalink to this definition">¶</a></dt>
+<dd><p>A description of the data type units</p>
+<p>A dictionary is used to describe categories that the numerical values of
+the units relate to.
+This is useful if numerical values of the units relate to specific categories.
+(eg. -1 = Cold, 0 = Neutral, +1 = Hot) (eg. 0 = False, 1 = True).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectHorizontalRadiation.units">
+<code class="descname">units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectHorizontalRadiation.units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of all accetpable units of the data type as abbreviated text.</p>
+<p>The first item of the list should be the standard SI unit.
+The second item of the list should be the stadard IP unit (if it exists).
+The rest of the list can be any other acceptable units.
+(eg. [C, F, K])</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation">
+<em class="property">class </em><code class="descclassname">ladybug.datatype.energyintensity.</code><code class="descname">DirectNormalRadiation</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/energyintensity.html#DirectNormalRadiation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ladybug.datatype.energyintensity.Radiation" title="ladybug.datatype.energyintensity.Radiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.datatype.energyintensity.Radiation</span></code></a></p>
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation.duplicate">
+<code class="descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the data type.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a data type from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># data type name of the data type as a string</span>
+    <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the class name of the data type as a string</span>
+    <span class="s2">&quot;base_unit&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the base unit of the data type</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation.is_in_range">
+<code class="descname">is_in_range</code><span class="sig-paren">(</span><em>values</em>, <em>unit=None</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation.is_in_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a list of values is within physically/mathematically possible range.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>values</strong> – A list of values.</li>
+<li><strong>unit</strong> – The unit of the values.  If not specified, the default metric
+unit will be assumed.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not in range.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation.is_unit_acceptable">
+<code class="descname">is_unit_acceptable</code><span class="sig-paren">(</span><em>unit</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation.is_unit_acceptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a certain unit is acceptable for the data type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>unit</strong> – A text string representing the abbreviated unit.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not acceptable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data type as a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation.to_ip">
+<code class="descname">to_ip</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation.to_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in IP and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation.to_si">
+<code class="descname">to_si</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation.to_si" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in SI and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation.to_unit">
+<code class="descname">to_unit</code><span class="sig-paren">(</span><em>values</em>, <em>unit</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation.to_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values converted to the unit given the input from_unit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation.abbreviation">
+<code class="descname">abbreviation</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation.abbreviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional abbreviation for the data type as text.</p>
+<p>(eg. ‘UTCI’ for Universal Thermal Climate Index).
+This can also be a letter that represents the data type in a formula.
+(eg. ‘A’ for Area; ‘P’ for Pressure)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation.cumulative">
+<code class="descname">cumulative</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation.cumulative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is cumulative.</p>
+<p>A Boolean indicates that the data type can be cumulative when it
+is represented over time (True) or it can only be averaged over time
+to be meaningful (False). Note that cumulative cannot be True
+when point_in_time is also True.
+(False Examples: Temperature, Irradiance, Illuminance)
+(True Examples: Energy, Radiation)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation.ip_units">
+<code class="descname">ip_units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation.ip_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable ip_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation.isDataType">
+<code class="descname">isDataType</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation.isDataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation.isEnergyIntensity">
+<code class="descname">isEnergyIntensity</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation.isEnergyIntensity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation.isRadiation">
+<code class="descname">isRadiation</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation.isRadiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation.max">
+<code class="descname">max</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper limit for the data type.</p>
+<p>Values above upper limit should be physically
+or mathematically impossible. (Default: +inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation.min">
+<code class="descname">min</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower limit for the data type.</p>
+<p>Values below lower limit should be physically
+or mathematically impossible. (Default: -inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full name of the data type as a string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation.point_in_time">
+<code class="descname">point_in_time</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation.point_in_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is point_in_time.</p>
+<p>A Boolean indicates that the data type represents conditions
+at a single instant in time (True) or at an average or
+accumulation over time (False) when found in hourly lists of data.
+(True Examples: Temperature, WindSpeed)
+(False Examples: Energy, Radiation, Illuminance)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation.si_units">
+<code class="descname">si_units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation.si_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable si_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation.unit_descr">
+<code class="descname">unit_descr</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation.unit_descr" title="Permalink to this definition">¶</a></dt>
+<dd><p>A description of the data type units</p>
+<p>A dictionary is used to describe categories that the numerical values of
+the units relate to.
+This is useful if numerical values of the units relate to specific categories.
+(eg. -1 = Cold, 0 = Neutral, +1 = Hot) (eg. 0 = False, 1 = True).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.DirectNormalRadiation.units">
+<code class="descname">units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.DirectNormalRadiation.units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of all accetpable units of the data type as abbreviated text.</p>
+<p>The first item of the list should be the standard SI unit.
+The second item of the list should be the stadard IP unit (if it exists).
+The rest of the list can be any other acceptable units.
+(eg. [C, F, K])</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.datatype.energyintensity.EnergyIntensity">
+<em class="property">class </em><code class="descclassname">ladybug.datatype.energyintensity.</code><code class="descname">EnergyIntensity</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/energyintensity.html#EnergyIntensity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.energyintensity.EnergyIntensity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ladybug.datatype.base.html#ladybug.datatype.base.DataTypeBase" title="ladybug.datatype.base.DataTypeBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.datatype.base.DataTypeBase</span></code></a></p>
+<p>Energy Intensity</p>
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.EnergyIntensity.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.EnergyIntensity.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.EnergyIntensity.duplicate">
+<code class="descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.EnergyIntensity.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the data type.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.datatype.energyintensity.EnergyIntensity.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.EnergyIntensity.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a data type from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># data type name of the data type as a string</span>
+    <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the class name of the data type as a string</span>
+    <span class="s2">&quot;base_unit&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the base unit of the data type</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.EnergyIntensity.is_in_range">
+<code class="descname">is_in_range</code><span class="sig-paren">(</span><em>values</em>, <em>unit=None</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.EnergyIntensity.is_in_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a list of values is within physically/mathematically possible range.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>values</strong> – A list of values.</li>
+<li><strong>unit</strong> – The unit of the values.  If not specified, the default metric
+unit will be assumed.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not in range.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.EnergyIntensity.is_unit_acceptable">
+<code class="descname">is_unit_acceptable</code><span class="sig-paren">(</span><em>unit</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.EnergyIntensity.is_unit_acceptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a certain unit is acceptable for the data type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>unit</strong> – A text string representing the abbreviated unit.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not acceptable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.EnergyIntensity.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.EnergyIntensity.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data type as a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.EnergyIntensity.to_ip">
+<code class="descname">to_ip</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/energyintensity.html#EnergyIntensity.to_ip"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.energyintensity.EnergyIntensity.to_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in IP and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.EnergyIntensity.to_si">
+<code class="descname">to_si</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/energyintensity.html#EnergyIntensity.to_si"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.energyintensity.EnergyIntensity.to_si" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in SI and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.EnergyIntensity.to_unit">
+<code class="descname">to_unit</code><span class="sig-paren">(</span><em>values</em>, <em>unit</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/energyintensity.html#EnergyIntensity.to_unit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.energyintensity.EnergyIntensity.to_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values converted to the unit given the input from_unit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.EnergyIntensity.abbreviation">
+<code class="descname">abbreviation</code><a class="headerlink" href="#ladybug.datatype.energyintensity.EnergyIntensity.abbreviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional abbreviation for the data type as text.</p>
+<p>(eg. ‘UTCI’ for Universal Thermal Climate Index).
+This can also be a letter that represents the data type in a formula.
+(eg. ‘A’ for Area; ‘P’ for Pressure)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.EnergyIntensity.cumulative">
+<code class="descname">cumulative</code><a class="headerlink" href="#ladybug.datatype.energyintensity.EnergyIntensity.cumulative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is cumulative.</p>
+<p>A Boolean indicates that the data type can be cumulative when it
+is represented over time (True) or it can only be averaged over time
+to be meaningful (False). Note that cumulative cannot be True
+when point_in_time is also True.
+(False Examples: Temperature, Irradiance, Illuminance)
+(True Examples: Energy, Radiation)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.EnergyIntensity.ip_units">
+<code class="descname">ip_units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.EnergyIntensity.ip_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable ip_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.EnergyIntensity.isDataType">
+<code class="descname">isDataType</code><a class="headerlink" href="#ladybug.datatype.energyintensity.EnergyIntensity.isDataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.EnergyIntensity.isEnergyIntensity">
+<code class="descname">isEnergyIntensity</code><a class="headerlink" href="#ladybug.datatype.energyintensity.EnergyIntensity.isEnergyIntensity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.EnergyIntensity.max">
+<code class="descname">max</code><a class="headerlink" href="#ladybug.datatype.energyintensity.EnergyIntensity.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper limit for the data type.</p>
+<p>Values above upper limit should be physically
+or mathematically impossible. (Default: +inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.EnergyIntensity.min">
+<code class="descname">min</code><a class="headerlink" href="#ladybug.datatype.energyintensity.EnergyIntensity.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower limit for the data type.</p>
+<p>Values below lower limit should be physically
+or mathematically impossible. (Default: -inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.EnergyIntensity.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.datatype.energyintensity.EnergyIntensity.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full name of the data type as a string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.EnergyIntensity.point_in_time">
+<code class="descname">point_in_time</code><a class="headerlink" href="#ladybug.datatype.energyintensity.EnergyIntensity.point_in_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is point_in_time.</p>
+<p>A Boolean indicates that the data type represents conditions
+at a single instant in time (True) or at an average or
+accumulation over time (False) when found in hourly lists of data.
+(True Examples: Temperature, WindSpeed)
+(False Examples: Energy, Radiation, Illuminance)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.EnergyIntensity.si_units">
+<code class="descname">si_units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.EnergyIntensity.si_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable si_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.EnergyIntensity.unit_descr">
+<code class="descname">unit_descr</code><a class="headerlink" href="#ladybug.datatype.energyintensity.EnergyIntensity.unit_descr" title="Permalink to this definition">¶</a></dt>
+<dd><p>A description of the data type units</p>
+<p>A dictionary is used to describe categories that the numerical values of
+the units relate to.
+This is useful if numerical values of the units relate to specific categories.
+(eg. -1 = Cold, 0 = Neutral, +1 = Hot) (eg. 0 = False, 1 = True).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.EnergyIntensity.units">
+<code class="descname">units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.EnergyIntensity.units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of all accetpable units of the data type as abbreviated text.</p>
+<p>The first item of the list should be the standard SI unit.
+The second item of the list should be the stadard IP unit (if it exists).
+The rest of the list can be any other acceptable units.
+(eg. [C, F, K])</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation">
+<em class="property">class </em><code class="descclassname">ladybug.datatype.energyintensity.</code><code class="descname">ExtraterrestrialDirectNormalRadiation</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/energyintensity.html#ExtraterrestrialDirectNormalRadiation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ladybug.datatype.energyintensity.Radiation" title="ladybug.datatype.energyintensity.Radiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.datatype.energyintensity.Radiation</span></code></a></p>
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.duplicate">
+<code class="descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the data type.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a data type from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># data type name of the data type as a string</span>
+    <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the class name of the data type as a string</span>
+    <span class="s2">&quot;base_unit&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the base unit of the data type</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.is_in_range">
+<code class="descname">is_in_range</code><span class="sig-paren">(</span><em>values</em>, <em>unit=None</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.is_in_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a list of values is within physically/mathematically possible range.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>values</strong> – A list of values.</li>
+<li><strong>unit</strong> – The unit of the values.  If not specified, the default metric
+unit will be assumed.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not in range.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.is_unit_acceptable">
+<code class="descname">is_unit_acceptable</code><span class="sig-paren">(</span><em>unit</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.is_unit_acceptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a certain unit is acceptable for the data type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>unit</strong> – A text string representing the abbreviated unit.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not acceptable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data type as a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.to_ip">
+<code class="descname">to_ip</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.to_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in IP and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.to_si">
+<code class="descname">to_si</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.to_si" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in SI and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.to_unit">
+<code class="descname">to_unit</code><span class="sig-paren">(</span><em>values</em>, <em>unit</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.to_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values converted to the unit given the input from_unit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.abbreviation">
+<code class="descname">abbreviation</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.abbreviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional abbreviation for the data type as text.</p>
+<p>(eg. ‘UTCI’ for Universal Thermal Climate Index).
+This can also be a letter that represents the data type in a formula.
+(eg. ‘A’ for Area; ‘P’ for Pressure)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.cumulative">
+<code class="descname">cumulative</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.cumulative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is cumulative.</p>
+<p>A Boolean indicates that the data type can be cumulative when it
+is represented over time (True) or it can only be averaged over time
+to be meaningful (False). Note that cumulative cannot be True
+when point_in_time is also True.
+(False Examples: Temperature, Irradiance, Illuminance)
+(True Examples: Energy, Radiation)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.ip_units">
+<code class="descname">ip_units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.ip_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable ip_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.isDataType">
+<code class="descname">isDataType</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.isDataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.isEnergyIntensity">
+<code class="descname">isEnergyIntensity</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.isEnergyIntensity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.isRadiation">
+<code class="descname">isRadiation</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.isRadiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.max">
+<code class="descname">max</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper limit for the data type.</p>
+<p>Values above upper limit should be physically
+or mathematically impossible. (Default: +inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.min">
+<code class="descname">min</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower limit for the data type.</p>
+<p>Values below lower limit should be physically
+or mathematically impossible. (Default: -inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full name of the data type as a string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.point_in_time">
+<code class="descname">point_in_time</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.point_in_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is point_in_time.</p>
+<p>A Boolean indicates that the data type represents conditions
+at a single instant in time (True) or at an average or
+accumulation over time (False) when found in hourly lists of data.
+(True Examples: Temperature, WindSpeed)
+(False Examples: Energy, Radiation, Illuminance)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.si_units">
+<code class="descname">si_units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.si_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable si_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.unit_descr">
+<code class="descname">unit_descr</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.unit_descr" title="Permalink to this definition">¶</a></dt>
+<dd><p>A description of the data type units</p>
+<p>A dictionary is used to describe categories that the numerical values of
+the units relate to.
+This is useful if numerical values of the units relate to specific categories.
+(eg. -1 = Cold, 0 = Neutral, +1 = Hot) (eg. 0 = False, 1 = True).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.units">
+<code class="descname">units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialDirectNormalRadiation.units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of all accetpable units of the data type as abbreviated text.</p>
+<p>The first item of the list should be the standard SI unit.
+The second item of the list should be the stadard IP unit (if it exists).
+The rest of the list can be any other acceptable units.
+(eg. [C, F, K])</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation">
+<em class="property">class </em><code class="descclassname">ladybug.datatype.energyintensity.</code><code class="descname">ExtraterrestrialHorizontalRadiation</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/energyintensity.html#ExtraterrestrialHorizontalRadiation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ladybug.datatype.energyintensity.Radiation" title="ladybug.datatype.energyintensity.Radiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.datatype.energyintensity.Radiation</span></code></a></p>
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.duplicate">
+<code class="descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the data type.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a data type from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># data type name of the data type as a string</span>
+    <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the class name of the data type as a string</span>
+    <span class="s2">&quot;base_unit&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the base unit of the data type</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.is_in_range">
+<code class="descname">is_in_range</code><span class="sig-paren">(</span><em>values</em>, <em>unit=None</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.is_in_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a list of values is within physically/mathematically possible range.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>values</strong> – A list of values.</li>
+<li><strong>unit</strong> – The unit of the values.  If not specified, the default metric
+unit will be assumed.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not in range.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.is_unit_acceptable">
+<code class="descname">is_unit_acceptable</code><span class="sig-paren">(</span><em>unit</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.is_unit_acceptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a certain unit is acceptable for the data type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>unit</strong> – A text string representing the abbreviated unit.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not acceptable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data type as a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.to_ip">
+<code class="descname">to_ip</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.to_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in IP and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.to_si">
+<code class="descname">to_si</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.to_si" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in SI and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.to_unit">
+<code class="descname">to_unit</code><span class="sig-paren">(</span><em>values</em>, <em>unit</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.to_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values converted to the unit given the input from_unit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.abbreviation">
+<code class="descname">abbreviation</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.abbreviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional abbreviation for the data type as text.</p>
+<p>(eg. ‘UTCI’ for Universal Thermal Climate Index).
+This can also be a letter that represents the data type in a formula.
+(eg. ‘A’ for Area; ‘P’ for Pressure)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.cumulative">
+<code class="descname">cumulative</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.cumulative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is cumulative.</p>
+<p>A Boolean indicates that the data type can be cumulative when it
+is represented over time (True) or it can only be averaged over time
+to be meaningful (False). Note that cumulative cannot be True
+when point_in_time is also True.
+(False Examples: Temperature, Irradiance, Illuminance)
+(True Examples: Energy, Radiation)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.ip_units">
+<code class="descname">ip_units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.ip_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable ip_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.isDataType">
+<code class="descname">isDataType</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.isDataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.isEnergyIntensity">
+<code class="descname">isEnergyIntensity</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.isEnergyIntensity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.isRadiation">
+<code class="descname">isRadiation</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.isRadiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.max">
+<code class="descname">max</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper limit for the data type.</p>
+<p>Values above upper limit should be physically
+or mathematically impossible. (Default: +inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.min">
+<code class="descname">min</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower limit for the data type.</p>
+<p>Values below lower limit should be physically
+or mathematically impossible. (Default: -inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full name of the data type as a string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.point_in_time">
+<code class="descname">point_in_time</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.point_in_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is point_in_time.</p>
+<p>A Boolean indicates that the data type represents conditions
+at a single instant in time (True) or at an average or
+accumulation over time (False) when found in hourly lists of data.
+(True Examples: Temperature, WindSpeed)
+(False Examples: Energy, Radiation, Illuminance)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.si_units">
+<code class="descname">si_units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.si_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable si_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.unit_descr">
+<code class="descname">unit_descr</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.unit_descr" title="Permalink to this definition">¶</a></dt>
+<dd><p>A description of the data type units</p>
+<p>A dictionary is used to describe categories that the numerical values of
+the units relate to.
+This is useful if numerical values of the units relate to specific categories.
+(eg. -1 = Cold, 0 = Neutral, +1 = Hot) (eg. 0 = False, 1 = True).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.units">
+<code class="descname">units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.ExtraterrestrialHorizontalRadiation.units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of all accetpable units of the data type as abbreviated text.</p>
+<p>The first item of the list should be the standard SI unit.
+The second item of the list should be the stadard IP unit (if it exists).
+The rest of the list can be any other acceptable units.
+(eg. [C, F, K])</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation">
+<em class="property">class </em><code class="descclassname">ladybug.datatype.energyintensity.</code><code class="descname">GlobalHorizontalRadiation</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/energyintensity.html#GlobalHorizontalRadiation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ladybug.datatype.energyintensity.Radiation" title="ladybug.datatype.energyintensity.Radiation"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.datatype.energyintensity.Radiation</span></code></a></p>
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation.duplicate">
+<code class="descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the data type.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a data type from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># data type name of the data type as a string</span>
+    <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the class name of the data type as a string</span>
+    <span class="s2">&quot;base_unit&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the base unit of the data type</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation.is_in_range">
+<code class="descname">is_in_range</code><span class="sig-paren">(</span><em>values</em>, <em>unit=None</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation.is_in_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a list of values is within physically/mathematically possible range.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>values</strong> – A list of values.</li>
+<li><strong>unit</strong> – The unit of the values.  If not specified, the default metric
+unit will be assumed.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not in range.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation.is_unit_acceptable">
+<code class="descname">is_unit_acceptable</code><span class="sig-paren">(</span><em>unit</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation.is_unit_acceptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a certain unit is acceptable for the data type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>unit</strong> – A text string representing the abbreviated unit.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not acceptable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data type as a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation.to_ip">
+<code class="descname">to_ip</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation.to_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in IP and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation.to_si">
+<code class="descname">to_si</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation.to_si" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in SI and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation.to_unit">
+<code class="descname">to_unit</code><span class="sig-paren">(</span><em>values</em>, <em>unit</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation.to_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values converted to the unit given the input from_unit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation.abbreviation">
+<code class="descname">abbreviation</code><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation.abbreviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional abbreviation for the data type as text.</p>
+<p>(eg. ‘UTCI’ for Universal Thermal Climate Index).
+This can also be a letter that represents the data type in a formula.
+(eg. ‘A’ for Area; ‘P’ for Pressure)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation.cumulative">
+<code class="descname">cumulative</code><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation.cumulative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is cumulative.</p>
+<p>A Boolean indicates that the data type can be cumulative when it
+is represented over time (True) or it can only be averaged over time
+to be meaningful (False). Note that cumulative cannot be True
+when point_in_time is also True.
+(False Examples: Temperature, Irradiance, Illuminance)
+(True Examples: Energy, Radiation)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation.ip_units">
+<code class="descname">ip_units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation.ip_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable ip_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation.isDataType">
+<code class="descname">isDataType</code><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation.isDataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation.isEnergyIntensity">
+<code class="descname">isEnergyIntensity</code><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation.isEnergyIntensity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation.isRadiation">
+<code class="descname">isRadiation</code><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation.isRadiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation.max">
+<code class="descname">max</code><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper limit for the data type.</p>
+<p>Values above upper limit should be physically
+or mathematically impossible. (Default: +inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation.min">
+<code class="descname">min</code><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower limit for the data type.</p>
+<p>Values below lower limit should be physically
+or mathematically impossible. (Default: -inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full name of the data type as a string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation.point_in_time">
+<code class="descname">point_in_time</code><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation.point_in_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is point_in_time.</p>
+<p>A Boolean indicates that the data type represents conditions
+at a single instant in time (True) or at an average or
+accumulation over time (False) when found in hourly lists of data.
+(True Examples: Temperature, WindSpeed)
+(False Examples: Energy, Radiation, Illuminance)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation.si_units">
+<code class="descname">si_units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation.si_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable si_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation.unit_descr">
+<code class="descname">unit_descr</code><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation.unit_descr" title="Permalink to this definition">¶</a></dt>
+<dd><p>A description of the data type units</p>
+<p>A dictionary is used to describe categories that the numerical values of
+the units relate to.
+This is useful if numerical values of the units relate to specific categories.
+(eg. -1 = Cold, 0 = Neutral, +1 = Hot) (eg. 0 = False, 1 = True).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.GlobalHorizontalRadiation.units">
+<code class="descname">units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.GlobalHorizontalRadiation.units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of all accetpable units of the data type as abbreviated text.</p>
+<p>The first item of the list should be the standard SI unit.
+The second item of the list should be the stadard IP unit (if it exists).
+The rest of the list can be any other acceptable units.
+(eg. [C, F, K])</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.datatype.energyintensity.Radiation">
+<em class="property">class </em><code class="descclassname">ladybug.datatype.energyintensity.</code><code class="descname">Radiation</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/datatype/energyintensity.html#Radiation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ladybug.datatype.energyintensity.EnergyIntensity" title="ladybug.datatype.energyintensity.EnergyIntensity"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.datatype.energyintensity.EnergyIntensity</span></code></a></p>
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.Radiation.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.Radiation.duplicate">
+<code class="descname">duplicate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation.duplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the data type.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.datatype.energyintensity.Radiation.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a data type from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># data type name of the data type as a string</span>
+    <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the class name of the data type as a string</span>
+    <span class="s2">&quot;base_unit&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># the base unit of the data type</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.Radiation.is_in_range">
+<code class="descname">is_in_range</code><span class="sig-paren">(</span><em>values</em>, <em>unit=None</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation.is_in_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a list of values is within physically/mathematically possible range.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>values</strong> – A list of values.</li>
+<li><strong>unit</strong> – The unit of the values.  If not specified, the default metric
+unit will be assumed.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not in range.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.Radiation.is_unit_acceptable">
+<code class="descname">is_unit_acceptable</code><span class="sig-paren">(</span><em>unit</em>, <em>raise_exception=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation.is_unit_acceptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a certain unit is acceptable for the data type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>unit</strong> – A text string representing the abbreviated unit.</li>
+<li><strong>raise_exception</strong> – Set to True to raise an exception if not acceptable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.Radiation.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data type as a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.Radiation.to_ip">
+<code class="descname">to_ip</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation.to_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in IP and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.Radiation.to_si">
+<code class="descname">to_si</code><span class="sig-paren">(</span><em>values</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation.to_si" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values in SI and the units to which the values have been converted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.datatype.energyintensity.Radiation.to_unit">
+<code class="descname">to_unit</code><span class="sig-paren">(</span><em>values</em>, <em>unit</em>, <em>from_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation.to_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return values converted to the unit given the input from_unit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.Radiation.abbreviation">
+<code class="descname">abbreviation</code><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation.abbreviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional abbreviation for the data type as text.</p>
+<p>(eg. ‘UTCI’ for Universal Thermal Climate Index).
+This can also be a letter that represents the data type in a formula.
+(eg. ‘A’ for Area; ‘P’ for Pressure)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.Radiation.cumulative">
+<code class="descname">cumulative</code><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation.cumulative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is cumulative.</p>
+<p>A Boolean indicates that the data type can be cumulative when it
+is represented over time (True) or it can only be averaged over time
+to be meaningful (False). Note that cumulative cannot be True
+when point_in_time is also True.
+(False Examples: Temperature, Irradiance, Illuminance)
+(True Examples: Energy, Radiation)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.Radiation.ip_units">
+<code class="descname">ip_units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation.ip_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable ip_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.Radiation.isDataType">
+<code class="descname">isDataType</code><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation.isDataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.Radiation.isEnergyIntensity">
+<code class="descname">isEnergyIntensity</code><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation.isEnergyIntensity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.Radiation.isRadiation">
+<code class="descname">isRadiation</code><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation.isRadiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.Radiation.max">
+<code class="descname">max</code><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper limit for the data type.</p>
+<p>Values above upper limit should be physically
+or mathematically impossible. (Default: +inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.Radiation.min">
+<code class="descname">min</code><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower limit for the data type.</p>
+<p>Values below lower limit should be physically
+or mathematically impossible. (Default: -inf)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.Radiation.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full name of the data type as a string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.Radiation.point_in_time">
+<code class="descname">point_in_time</code><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation.point_in_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the data type is point_in_time.</p>
+<p>A Boolean indicates that the data type represents conditions
+at a single instant in time (True) or at an average or
+accumulation over time (False) when found in hourly lists of data.
+(True Examples: Temperature, WindSpeed)
+(False Examples: Energy, Radiation, Illuminance)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.Radiation.si_units">
+<code class="descname">si_units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation.si_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of acceptable si_units for the data type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.Radiation.unit_descr">
+<code class="descname">unit_descr</code><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation.unit_descr" title="Permalink to this definition">¶</a></dt>
+<dd><p>A description of the data type units</p>
+<p>A dictionary is used to describe categories that the numerical values of
+the units relate to.
+This is useful if numerical values of the units relate to specific categories.
+(eg. -1 = Cold, 0 = Neutral, +1 = Hot) (eg. 0 = False, 1 = True).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.datatype.energyintensity.Radiation.units">
+<code class="descname">units</code><a class="headerlink" href="#ladybug.datatype.energyintensity.Radiation.units" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple of all accetpable units of the data type as abbreviated text.</p>
+<p>The first item of the list should be the standard SI unit.
+The second item of the list should be the stadard IP unit (if it exists).
+The rest of the list can be any other acceptable units.
+(eg. [C, F, K])</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2019, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

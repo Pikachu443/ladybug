@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ladybug.designday module &#8212; ladybug  documentation</title>
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ladybug.dt module" href="ladybug.dt.html" />
+    <link rel="prev" title="ladybug.datacollectionimmutable module" href="ladybug.datacollectionimmutable.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfind.html">ladybug.rootfind module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfind.html">ladybug.rootfind module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="ladybug.datacollectionimmutable.html" title="Previous Chapter: ladybug.datacollectionimmutable module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; ladybug.datac...</span>
+    </a>
+  </li>
+  <li>
+    <a href="ladybug.dt.html" title="Next Chapter: ladybug.dt module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">ladybug.dt module &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/ladybug.designday.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.graphic.html">ladybug.graphic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legend.html">ladybug.legend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.psychrometrics.html">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfind.html">ladybug.rootfind module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-ladybug.designday">
+<span id="ladybug-designday-module"></span><h1>ladybug.designday module<a class="headerlink" href="#module-ladybug.designday" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="ladybug.designday.DDY">
+<em class="property">class </em><code class="descclassname">ladybug.designday.</code><code class="descname">DDY</code><span class="sig-paren">(</span><em>location</em>, <em>design_days</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#DDY"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.DDY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A DDY object containing all of the data of a .ddy file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>location</strong> – A Ladybug location object</li>
+<li><strong>design_days</strong> – A list of the design days in the ddy file.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Properties:</dt>
+<dd><ul class="first last simple">
+<li>file_locatiom</li>
+<li>location</li>
+<li>design_days</li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="ladybug.designday.DDY.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#DDY.ToString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.DDY.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.designday.DDY.filter_by_keyword">
+<code class="descname">filter_by_keyword</code><span class="sig-paren">(</span><em>keyword</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#DDY.filter_by_keyword"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.DDY.filter_by_keyword" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of ddys that have a certain keyword in their name.</p>
+<p>This is useful for selecting out design days from a ddy file that are
+for a specific type of condition (for example, .4% cooling design days)</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.designday.DDY.from_ddy_file">
+<em class="property">classmethod </em><code class="descname">from_ddy_file</code><span class="sig-paren">(</span><em>file_path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#DDY.from_ddy_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.DDY.from_ddy_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initalize from a ddy file object from an existing ddy file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file_path</strong> – A string representing a complete path to the .ddy file.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.designday.DDY.from_design_day">
+<em class="property">classmethod </em><code class="descname">from_design_day</code><span class="sig-paren">(</span><em>design_day</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#DDY.from_design_day"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.DDY.from_design_day" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initalize from a ddy file object from a ladybug design day object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>design_day</strong> – A Ladybug DesignDay object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.designday.DDY.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#DDY.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.DDY.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a DDY from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;location&quot;</span><span class="p">:</span> <span class="p">{}</span>  <span class="c1"># ladybug Location schema,</span>
+<span class="s2">&quot;design_days&quot;</span><span class="p">:</span> <span class="p">[]</span>  <span class="c1"># list of ladybug DesignDay schemas</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.designday.DDY.save">
+<code class="descname">save</code><span class="sig-paren">(</span><em>file_path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#DDY.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.DDY.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save ddy object as a .ddy file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file_path</strong> – A string representing the path to write the ddy file to.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.designday.DDY.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#DDY.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.DDY.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the Design Day to a dictionary.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DDY.design_days">
+<code class="descname">design_days</code><a class="headerlink" href="#ladybug.designday.DDY.design_days" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the design_days.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DDY.file_path">
+<code class="descname">file_path</code><a class="headerlink" href="#ladybug.designday.DDY.file_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the current ddy ddy file.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DDY.isDdy">
+<code class="descname">isDdy</code><a class="headerlink" href="#ladybug.designday.DDY.isDdy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DDY.location">
+<code class="descname">location</code><a class="headerlink" href="#ladybug.designday.DDY.location" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the location.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.designday.DesignDay">
+<em class="property">class </em><code class="descclassname">ladybug.designday.</code><code class="descname">DesignDay</code><span class="sig-paren">(</span><em>name</em>, <em>day_type</em>, <em>location</em>, <em>dry_bulb_condition</em>, <em>humidity_condition</em>, <em>wind_condition</em>, <em>sky_condition</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#DesignDay"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.DesignDay" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>An object representing design day conditions.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name</strong> – A text string to set the name of the design day</li>
+<li><strong>day_type</strong> – Choose from ‘SummerDesignDay’, ‘WinterDesignDay’ or other
+EnergyPlus days visible under the day_types property of this object.</li>
+<li><strong>location</strong> – Location object for the design day</li>
+<li><strong>dry_bulb_condition</strong> – Ladyubug DryBulbCondition object</li>
+<li><strong>humidity_condition</strong> – Ladyubug HumidityCondition object</li>
+<li><strong>wind_condition</strong> – Ladyubug WindCondition object</li>
+<li><strong>sky_condition</strong> – Ladybug SkyCondition object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Properties:</dt>
+<dd><ul class="first last simple">
+<li>name</li>
+<li>day_type</li>
+<li>location</li>
+<li>dry_bulb_condition</li>
+<li>hourly_barometric_pressure</li>
+<li>hourly_datetimes</li>
+<li>hourly_dew_point</li>
+<li>hourly_dry_bulb</li>
+<li>hourly_horizontal_infrared</li>
+<li>hourly_relative_humidity</li>
+<li>hourly_sky_cover</li>
+<li>hourly_solar_radiation</li>
+<li>hourly_wind_direction</li>
+<li>hourly_wind_speed</li>
+<li>humidity_condition</li>
+<li>name</li>
+<li>sky_condition</li>
+<li>wind_condition</li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="ladybug.designday.DesignDay.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#DesignDay.ToString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.DesignDay.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.designday.DesignDay.from_ashrae_dict_cooling">
+<em class="property">classmethod </em><code class="descname">from_ashrae_dict_cooling</code><span class="sig-paren">(</span><em>ashrae_dict</em>, <em>location</em>, <em>use_010=False</em>, <em>pressure=None</em>, <em>tau=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#DesignDay.from_ashrae_dict_cooling"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.DesignDay.from_ashrae_dict_cooling" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a heating design day object from a ASHRAE HOF dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>ashrae_dict</strong> – A dictionary with 32 keys that match those in the
+cooling_keys property of this object. Each key should
+correspond to a value.</li>
+<li><strong>location</strong> – Location object for the design day</li>
+<li><strong>use_010</strong> – Boolean to denote what type of design day to create
+(wether it is a 1.0% or a 0.4% design day).  Default is
+False for a 0.4% annual cooling design day</li>
+<li><strong>pressure</strong> – Atmospheric pressure in Pa that should be used in the
+creation of the humidity condition. Default is 101325 Pa
+for pressure at sea level.</li>
+<li><strong>tau</strong> – Optional tuple containing two values, which will set the
+sky condition to be a revised ASHRAE clear sky (Tau model).
+The first item of the tuple should be the tau beam value
+and the second is for the tau diffuse value.  Default is
+None, which will default to the original ASHRAE Clear Sky.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.designday.DesignDay.from_ashrae_dict_heating">
+<em class="property">classmethod </em><code class="descname">from_ashrae_dict_heating</code><span class="sig-paren">(</span><em>ashrae_dict</em>, <em>location</em>, <em>use_990=False</em>, <em>pressure=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#DesignDay.from_ashrae_dict_heating"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.DesignDay.from_ashrae_dict_heating" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a heating design day object from a ASHRAE HOF dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>ashrae_dict</strong> – A dictionary with 15 keys that match those in the
+heating_keys property of this object. Each key should
+correspond to a value.</li>
+<li><strong>location</strong> – Location object for the design day</li>
+<li><strong>use_990</strong> – Boolean to denote what type of design day to create
+(wether it is a 99.0% or a 99.6% design day).  Default is
+False for a 99.6% annual heating design day</li>
+<li><strong>pressure</strong> – Atmospheric pressure in Pa that should be used in the
+creation of the humidity condition. Default is 101325 Pa
+for pressure at sea level.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.designday.DesignDay.from_design_day_properties">
+<em class="property">classmethod </em><code class="descname">from_design_day_properties</code><span class="sig-paren">(</span><em>name</em>, <em>day_type</em>, <em>location</em>, <em>analysis_period</em>, <em>dry_bulb_max</em>, <em>dry_bulb_range</em>, <em>humidity_type</em>, <em>humidity_value</em>, <em>barometric_p</em>, <em>wind_speed</em>, <em>wind_dir</em>, <em>sky_model</em>, <em>sky_properties</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#DesignDay.from_design_day_properties"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.DesignDay.from_design_day_properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a design day object from various key properties.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name</strong> – A text string to set the name of the design day</li>
+<li><strong>day_type</strong> – Choose from ‘SummerDesignDay’, ‘WinterDesignDay’ or other
+EnergyPlus days</li>
+<li><strong>location</strong> – Location for the design day</li>
+<li><strong>analysis_period</strong> – Analysis period for the design day</li>
+<li><strong>dry_bulb_max</strong> – Maximum dry bulb temperature over the design day (in C).</li>
+<li><strong>dry_bulb_range</strong> – Dry bulb range over the design day (in C).</li>
+<li><strong>humidity_type</strong> – Type of humidity to use. Choose from
+Wetbulb, Dewpoint, HumidityRatio, Enthalpy</li>
+<li><strong>humidity_value</strong> – The value of the condition above.</li>
+<li><strong>barometric_p</strong> – Barometric pressure in Pa.</li>
+<li><strong>wind_speed</strong> – Wind speed over the design day in m/s.</li>
+<li><strong>wind_dir</strong> – Wind direction over the design day in degrees.</li>
+<li><strong>sky_model</strong> – Type of solar model to use.  Choose from
+ASHRAEClearSky, ASHRAETau</li>
+<li><strong>sky_properties</strong> – A list of properties describing the sky above.
+For ASHRAEClearSky this is a single value for clearness
+For ASHRAETau, this is the tau_beam and tau_diffuse</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.designday.DesignDay.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#DesignDay.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.DesignDay.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a Design Day from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>  <span class="c1"># string</span>
+<span class="s2">&quot;day_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>  <span class="c1"># string</span>
+<span class="s2">&quot;location&quot;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># ladybug Location schema</span>
+<span class="s2">&quot;dry_bulb_condition&quot;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># ladybug DryBulbCondition schema</span>
+<span class="s2">&quot;humidity_condition&quot;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># ladybug HumidityCondition schema</span>
+<span class="s2">&quot;wind_condition&quot;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># ladybug WindCondition schema</span>
+<span class="s2">&quot;sky_condition&quot;</span><span class="p">:</span> <span class="p">{}</span>  <span class="c1"># ladybug SkyCondition schema</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.designday.DesignDay.from_ep_string">
+<em class="property">classmethod </em><code class="descname">from_ep_string</code><span class="sig-paren">(</span><em>ep_string</em>, <em>location</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#DesignDay.from_ep_string"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.DesignDay.from_ep_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initalize from an EnergyPlus string of a SizingPeriod:DesignDay.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ep_string</strong> – A full string representing a SizingPeriod:DesignDay.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.designday.DesignDay.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#DesignDay.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.DesignDay.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the Design Day to a dictionary.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.analysis_period">
+<code class="descname">analysis_period</code><a class="headerlink" href="#ladybug.designday.DesignDay.analysis_period" title="Permalink to this definition">¶</a></dt>
+<dd><p>The analysisperiod of the design day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.comments">
+<code class="descname">comments</code><em class="property"> = ('!- Name', '!- Month', '!- Day of Month', '!- Day Type', '!- Max Dry-Bulb Temp [C]', '!- Daily Dry-Bulb Temp Range [C]', '!- Dry-Bulb Temp Range Modifier Type', '!- Dry-Bulb Temp Range Modifier Schedule Name', '!- Humidity Condition Type', '!- Wetbulb/Dewpoint at Max Dry-Bulb [C]', '!- Humidity Indicating Day Schedule Name', '!- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}', '!- Enthalpy at Maximum Dry-Bulb {J/kg}', '!- Daily Wet-Bulb Temperature Range [deltaC]', '!- Barometric Pressure [Pa]', '!- Wind Speed {m/s}', '!- Wind Direction [Degrees; N=0, S=180]', '!- Rain [Yes/No]', '!- Snow on ground [Yes/No]', '!- Daylight Savings Time Indicator', '!- Solar Model Indicator', '!- Beam Solar Day Schedule Name', '!- Diffuse Solar Day Schedule Name', '!- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub)', '!- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud)', '!- Clearness [0.0 to 1.2]')</em><a class="headerlink" href="#ladybug.designday.DesignDay.comments" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.cooling_keys">
+<code class="descname">cooling_keys</code><em class="property"> = ('Month', 'DBR', 'DB004', 'WB_DB004', 'DB010', 'WB_DB010', 'DB020', 'WB_DB020', 'WB004', 'DB_WB004', 'WB010', 'DB_WB010', 'WB020', 'DB_WB020', 'WS_DB004', 'WD_DB004', 'DP004', 'HR_DP004', 'DB_DP004', 'DP010', 'HR_DP010', 'DB_DP010', 'DP020', 'HR_DP020', 'DB_DP020', 'EN004', 'DB_EN004', 'EN010', 'DB_EN010', 'EN020', 'DB_EN020', 'Hrs_8-4_&amp;_DB')</em><a class="headerlink" href="#ladybug.designday.DesignDay.cooling_keys" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.day_type">
+<code class="descname">day_type</code><a class="headerlink" href="#ladybug.designday.DesignDay.day_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the type of design day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.day_types">
+<code class="descname">day_types</code><em class="property"> = ('SummerDesignDay', 'WinterDesignDay', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Holiday', 'CustomDay1', 'CustomDay2')</em><a class="headerlink" href="#ladybug.designday.DesignDay.day_types" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.dry_bulb_condition">
+<code class="descname">dry_bulb_condition</code><a class="headerlink" href="#ladybug.designday.DesignDay.dry_bulb_condition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the dry bulb conditions.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.ep_style_string">
+<code class="descname">ep_style_string</code><a class="headerlink" href="#ladybug.designday.DesignDay.ep_style_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>DesignDay.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">DesignDay.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">ep_string – A full string representing a SizingPeriod</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">Serialize object to an EnerygPlus SizingPeriod</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.extreme_keys">
+<code class="descname">extreme_keys</code><em class="property"> = ('WS010', 'WS025', 'WS050', 'WBmax', 'DBmin_mean', 'DBmax_mean', 'DBmin_stddev', 'DBmax_stddev', 'DBmin05years', 'DBmax05years', 'DBmin10years', 'DBmax10years', 'DBmin20years', 'DBmax20years', 'DBmin50years', 'DBmax50years')</em><a class="headerlink" href="#ladybug.designday.DesignDay.extreme_keys" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.heating_keys">
+<code class="descname">heating_keys</code><em class="property"> = ('Month', 'DB996', 'DB990', 'DP996', 'HR_DP996', 'DB_DP996', 'DP990', 'HR_DP990', 'DB_DP990', 'WS004c', 'DB_WS004c', 'WS010c', 'DB_WS010c', 'WS_DB996', 'WD_DB996')</em><a class="headerlink" href="#ladybug.designday.DesignDay.heating_keys" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.hourly_barometric_pressure">
+<code class="descname">hourly_barometric_pressure</code><a class="headerlink" href="#ladybug.designday.DesignDay.hourly_barometric_pressure" title="Permalink to this definition">¶</a></dt>
+<dd><p>A data collection containing hourly barometric pressures over they day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.hourly_datetimes">
+<code class="descname">hourly_datetimes</code><a class="headerlink" href="#ladybug.designday.DesignDay.hourly_datetimes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.hourly_dew_point">
+<code class="descname">hourly_dew_point</code><a class="headerlink" href="#ladybug.designday.DesignDay.hourly_dew_point" title="Permalink to this definition">¶</a></dt>
+<dd><p>A data collection containing hourly dew points over they day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.hourly_dry_bulb">
+<code class="descname">hourly_dry_bulb</code><a class="headerlink" href="#ladybug.designday.DesignDay.hourly_dry_bulb" title="Permalink to this definition">¶</a></dt>
+<dd><p>A data collection containing hourly dry bulb temperature over they day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.hourly_horizontal_infrared">
+<code class="descname">hourly_horizontal_infrared</code><a class="headerlink" href="#ladybug.designday.DesignDay.hourly_horizontal_infrared" title="Permalink to this definition">¶</a></dt>
+<dd><p>A data collection containing hourly horizontal infrared intensity in W/m2.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.hourly_relative_humidity">
+<code class="descname">hourly_relative_humidity</code><a class="headerlink" href="#ladybug.designday.DesignDay.hourly_relative_humidity" title="Permalink to this definition">¶</a></dt>
+<dd><p>A data collection containing hourly relative humidity over they day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.hourly_sky_cover">
+<code class="descname">hourly_sky_cover</code><a class="headerlink" href="#ladybug.designday.DesignDay.hourly_sky_cover" title="Permalink to this definition">¶</a></dt>
+<dd><p>A data collection containing hourly sky cover values in tenths.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.hourly_solar_radiation">
+<code class="descname">hourly_solar_radiation</code><a class="headerlink" href="#ladybug.designday.DesignDay.hourly_solar_radiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Three data collections containing hourly direct normal, diffuse horizontal,
+and global horizontal radiation.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.hourly_wind_direction">
+<code class="descname">hourly_wind_direction</code><a class="headerlink" href="#ladybug.designday.DesignDay.hourly_wind_direction" title="Permalink to this definition">¶</a></dt>
+<dd><p>A data collection containing hourly wind directions over they day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.hourly_wind_speed">
+<code class="descname">hourly_wind_speed</code><a class="headerlink" href="#ladybug.designday.DesignDay.hourly_wind_speed" title="Permalink to this definition">¶</a></dt>
+<dd><p>A data collection containing hourly wind speeds over they day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.humidity_condition">
+<code class="descname">humidity_condition</code><a class="headerlink" href="#ladybug.designday.DesignDay.humidity_condition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the humidity conditions.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.isDesignDay">
+<code class="descname">isDesignDay</code><a class="headerlink" href="#ladybug.designday.DesignDay.isDesignDay" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.location">
+<code class="descname">location</code><a class="headerlink" href="#ladybug.designday.DesignDay.location" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the location.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.name">
+<code class="descname">name</code><a class="headerlink" href="#ladybug.designday.DesignDay.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the name.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.sky_condition">
+<code class="descname">sky_condition</code><a class="headerlink" href="#ladybug.designday.DesignDay.sky_condition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the sky conditions.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DesignDay.wind_condition">
+<code class="descname">wind_condition</code><a class="headerlink" href="#ladybug.designday.DesignDay.wind_condition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the wind conditions.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.designday.DryBulbCondition">
+<em class="property">class </em><code class="descclassname">ladybug.designday.</code><code class="descname">DryBulbCondition</code><span class="sig-paren">(</span><em>dry_bulb_max</em>, <em>dry_bulb_range</em>, <em>modifier_type='DefaultMultipliers'</em>, <em>modifier_schedule=''</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#DryBulbCondition"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.DryBulbCondition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represents dry bulb conditions on a design day.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>dry_bulb_max</strong> – The maximum dry bulb temperature on the design day [C].</li>
+<li><strong>dry_bulb_range</strong> – The difference between mina dn max temperatures on the
+design day [C].</li>
+<li><strong>modifier_type</strong> – Text string for the type of modifier used to estimate
+temperature at a given timestep. Choose from the following:
+‘DefaultMultipliers’, ‘MultiplierSchedule’, ‘DifferenceSchedule’,
+‘TemperatureProfileSchedule’. Default: ‘DefaultMultipliers’</li>
+<li><strong>modifier_schedule</strong> – Optional text string for the name of the modifier
+schedule. Should be an empty string unless ‘MultiplierSchedule’ is
+selected as the modifier_type.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Properties:</dt>
+<dd><ul class="first last simple">
+<li>dry_bulb_max</li>
+<li>dry_bulb_range</li>
+<li>hourly_values</li>
+<li>temp_multipliers</li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="ladybug.designday.DryBulbCondition.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#DryBulbCondition.ToString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.DryBulbCondition.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.designday.DryBulbCondition.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#DryBulbCondition.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.DryBulbCondition.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a Dry Bulb Condition from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;dry_bulb_max&quot;</span><span class="p">:</span> <span class="mf">0.0</span>  <span class="c1"># float,</span>
+<span class="s2">&quot;dry_bulb_range&quot;</span><span class="p">:</span> <span class="mf">0.0</span>  <span class="c1"># float,</span>
+<span class="s2">&quot;modifier_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># string,</span>
+<span class="s2">&quot;modifier_schedule&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># string</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.designday.DryBulbCondition.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#DryBulbCondition.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.DryBulbCondition.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the Dry Bulb Condition to a dictionary.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DryBulbCondition.dry_bulb_max">
+<code class="descname">dry_bulb_max</code><a class="headerlink" href="#ladybug.designday.DryBulbCondition.dry_bulb_max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the max dry bulb temperature.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DryBulbCondition.dry_bulb_range">
+<code class="descname">dry_bulb_range</code><a class="headerlink" href="#ladybug.designday.DryBulbCondition.dry_bulb_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the dry bulb range over the day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DryBulbCondition.hourly_values">
+<code class="descname">hourly_values</code><a class="headerlink" href="#ladybug.designday.DryBulbCondition.hourly_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of temperature values for each hour over the design day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DryBulbCondition.isDryBulbCondition">
+<code class="descname">isDryBulbCondition</code><a class="headerlink" href="#ladybug.designday.DryBulbCondition.isDryBulbCondition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.DryBulbCondition.temp_multipliers">
+<code class="descname">temp_multipliers</code><a class="headerlink" href="#ladybug.designday.DryBulbCondition.temp_multipliers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fractional multipliers for temperature change over the design day.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.designday.HumidityCondition">
+<em class="property">class </em><code class="descclassname">ladybug.designday.</code><code class="descname">HumidityCondition</code><span class="sig-paren">(</span><em>hum_type</em>, <em>hum_value</em>, <em>barometric_pressure=101325</em>, <em>schedule=''</em>, <em>wet_bulb_range=''</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#HumidityCondition"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.HumidityCondition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represents humidity conditions on the design day.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>hum_type</strong> – Choose from
+Wetbulb, Dewpoint, HumidityRatio, Enthalpy</li>
+<li><strong>hum_value</strong> – The value of the condition above</li>
+<li><strong>barometric_pressure</strong> – Default is to use pressure at sea level</li>
+<li><strong>schedule</strong> – Optional humidity schedule</li>
+<li><strong>wet_bulb_range</strong> – Optional wet bulb temperature range</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Properties:</dt>
+<dd><ul class="first last simple">
+<li>hum_type</li>
+<li>hum_value</li>
+<li>barometric_pressure</li>
+<li>schedule</li>
+<li>wet_bulb_range</li>
+<li>hourly_pressure</li>
+<li>humid_types</li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="ladybug.designday.HumidityCondition.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#HumidityCondition.ToString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.HumidityCondition.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.designday.HumidityCondition.dew_point">
+<code class="descname">dew_point</code><span class="sig-paren">(</span><em>db</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#HumidityCondition.dew_point"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.HumidityCondition.dew_point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the dew point (C), which is constant throughout the day (except at saturation).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>db</strong> – The maximum dry bulb temperature over the day.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.designday.HumidityCondition.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#HumidityCondition.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.HumidityCondition.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a Humidity Condition from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;hum_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># string,</span>
+<span class="s2">&quot;hum_value&quot;</span><span class="p">:</span> <span class="mf">0.0</span>  <span class="c1"># float,</span>
+<span class="s2">&quot;barometric_pressure&quot;</span><span class="p">:</span> <span class="mf">0.0</span>  <span class="c1"># float,</span>
+<span class="s2">&quot;schedule&quot;</span><span class="p">:</span> <span class="p">{}</span>  <span class="c1"># string,</span>
+<span class="s2">&quot;wet_bulb_range&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># string</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.designday.HumidityCondition.hourly_dew_point_values">
+<code class="descname">hourly_dew_point_values</code><span class="sig-paren">(</span><em>dry_bulb_condition</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#HumidityCondition.hourly_dew_point_values"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.HumidityCondition.hourly_dew_point_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of dew points (C) at each hour over the design day.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dry_bulb_condition</strong> – The dry bulb condition for the day.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.designday.HumidityCondition.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#HumidityCondition.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.HumidityCondition.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the Humidity Condition to a dictionary.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.HumidityCondition.barometric_pressure">
+<code class="descname">barometric_pressure</code><a class="headerlink" href="#ladybug.designday.HumidityCondition.barometric_pressure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the value of the barometric pressure.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.HumidityCondition.hourly_pressure">
+<code class="descname">hourly_pressure</code><a class="headerlink" href="#ladybug.designday.HumidityCondition.hourly_pressure" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of barometric pressures for each hour over the design day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.HumidityCondition.hum_type">
+<code class="descname">hum_type</code><a class="headerlink" href="#ladybug.designday.HumidityCondition.hum_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the humidity condition type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.HumidityCondition.hum_value">
+<code class="descname">hum_value</code><a class="headerlink" href="#ladybug.designday.HumidityCondition.hum_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the value of the humidity.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.HumidityCondition.humid_types">
+<code class="descname">humid_types</code><a class="headerlink" href="#ladybug.designday.HumidityCondition.humid_types" title="Permalink to this definition">¶</a></dt>
+<dd><p>Types of humidity conditions.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.HumidityCondition.isHumidityCondition">
+<code class="descname">isHumidityCondition</code><a class="headerlink" href="#ladybug.designday.HumidityCondition.isHumidityCondition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.designday.OriginalClearSkyCondition">
+<em class="property">class </em><code class="descclassname">ladybug.designday.</code><code class="descname">OriginalClearSkyCondition</code><span class="sig-paren">(</span><em>month</em>, <em>day_of_month</em>, <em>clearness=1</em>, <em>daylight_savings_indicator='No'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#OriginalClearSkyCondition"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.OriginalClearSkyCondition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ladybug.designday.SkyCondition" title="ladybug.designday.SkyCondition"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.designday.SkyCondition</span></code></a></p>
+<p>An object representing an original ASHRAE Clear Sky.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>month</strong> – Month in which the design day occurs.</li>
+<li><strong>day_of_month</strong> – Day of the month on which the design day occurs.</li>
+<li><strong>clearness</strong> – Value between 0 and 1.2 that will get multiplied by the model’s
+irradinace to correct for factors like elevation.</li>
+<li><strong>daylight_savings_indicator</strong> – Text (‘Yes’ or ‘No’), for whether daylight savings
+time is active. Default: ‘No’</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Properties:</dt>
+<dd><ul class="first last simple">
+<li>month</li>
+<li>day_of_month</li>
+<li>clearness</li>
+<li>daylight_savings_indicator</li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="ladybug.designday.OriginalClearSkyCondition.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.designday.OriginalClearSkyCondition.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.designday.OriginalClearSkyCondition.from_analysis_period">
+<em class="property">classmethod </em><code class="descname">from_analysis_period</code><span class="sig-paren">(</span><em>analysis_period</em>, <em>clearness=1</em>, <em>daylight_savings_indicator='No'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#OriginalClearSkyCondition.from_analysis_period"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.OriginalClearSkyCondition.from_analysis_period" title="Permalink to this definition">¶</a></dt>
+<dd><p>“Initialize a OriginalClearSkyCondition from an analysis_period</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.designday.OriginalClearSkyCondition.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#OriginalClearSkyCondition.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.OriginalClearSkyCondition.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a Sky Condition from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;solar_model&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># string,</span>
+<span class="s2">&quot;month&quot;</span><span class="p">:</span> <span class="mi">1</span>  <span class="c1"># int,</span>
+<span class="s2">&quot;day_of_month&quot;</span><span class="p">:</span> <span class="mi">1</span>  <span class="c1"># int,</span>
+<span class="s2">&quot;clearness&quot;</span><span class="p">:</span> <span class="mf">0.0</span>  <span class="c1"># float,</span>
+<span class="s2">&quot;daylight_savings_indicator&quot;</span><span class="p">:</span> <span class="s2">&quot;No&quot;</span>  <span class="c1"># string // &quot;Yes&quot; or &quot;No&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.designday.OriginalClearSkyCondition.radiation_values">
+<code class="descname">radiation_values</code><span class="sig-paren">(</span><em>location</em>, <em>timestep=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#OriginalClearSkyCondition.radiation_values"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.OriginalClearSkyCondition.radiation_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lists of driect normal, diffuse horiz, and global horiz rad at each timestep.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.designday.OriginalClearSkyCondition.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#OriginalClearSkyCondition.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.OriginalClearSkyCondition.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the Sky Condition to a dictionary.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.OriginalClearSkyCondition.clearness">
+<code class="descname">clearness</code><a class="headerlink" href="#ladybug.designday.OriginalClearSkyCondition.clearness" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the sky clearness.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.OriginalClearSkyCondition.day_of_month">
+<code class="descname">day_of_month</code><a class="headerlink" href="#ladybug.designday.OriginalClearSkyCondition.day_of_month" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the day of the month of the design day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.OriginalClearSkyCondition.hourly_sky_cover">
+<code class="descname">hourly_sky_cover</code><a class="headerlink" href="#ladybug.designday.OriginalClearSkyCondition.hourly_sky_cover" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lists of sky cover values in tenths.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.OriginalClearSkyCondition.isSkyCondition">
+<code class="descname">isSkyCondition</code><a class="headerlink" href="#ladybug.designday.OriginalClearSkyCondition.isSkyCondition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.OriginalClearSkyCondition.month">
+<code class="descname">month</code><a class="headerlink" href="#ladybug.designday.OriginalClearSkyCondition.month" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the month of the design day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.OriginalClearSkyCondition.sky_types">
+<code class="descname">sky_types</code><a class="headerlink" href="#ladybug.designday.OriginalClearSkyCondition.sky_types" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of possible sky types that can be associated with design days.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.OriginalClearSkyCondition.solar_model">
+<code class="descname">solar_model</code><a class="headerlink" href="#ladybug.designday.OriginalClearSkyCondition.solar_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the type of solar model.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.designday.RevisedClearSkyCondition">
+<em class="property">class </em><code class="descclassname">ladybug.designday.</code><code class="descname">RevisedClearSkyCondition</code><span class="sig-paren">(</span><em>month</em>, <em>day_of_month</em>, <em>tau_b</em>, <em>tau_d</em>, <em>daylight_savings_indicator='No'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#RevisedClearSkyCondition"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.RevisedClearSkyCondition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ladybug.designday.SkyCondition" title="ladybug.designday.SkyCondition"><code class="xref py py-class docutils literal notranslate"><span class="pre">ladybug.designday.SkyCondition</span></code></a></p>
+<p>An object representing an ASHRAE Revised Clear Sky (Tau model).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>month</strong> – Month in which the design day occurs.</li>
+<li><strong>day_of_month</strong> – Day of the month on which the design day occurs.</li>
+<li><strong>tau_b</strong> – Value for the ‘beam’ term in the Tau model. Typically
+found in .stat files.</li>
+<li><strong>tau_d</strong> – Value for the ‘diffuse’ term in the Tau model. Typically
+found in .stat files.</li>
+<li><strong>daylight_savings_indicator</strong> – Text (‘Yes’ or ‘No’), for whether daylight savings
+time is active. Default: ‘No’</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Properties:</dt>
+<dd><ul class="first last simple">
+<li>day_of_month</li>
+<li>hourly_sky_cover</li>
+<li>month</li>
+<li>sky_types</li>
+<li>solar_model</li>
+<li>tau_b</li>
+<li>tau_d</li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="ladybug.designday.RevisedClearSkyCondition.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ladybug.designday.RevisedClearSkyCondition.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.designday.RevisedClearSkyCondition.from_analysis_period">
+<em class="property">classmethod </em><code class="descname">from_analysis_period</code><span class="sig-paren">(</span><em>analysis_period</em>, <em>tau_b</em>, <em>tau_d</em>, <em>daylight_savings_indicator='No'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#RevisedClearSkyCondition.from_analysis_period"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.RevisedClearSkyCondition.from_analysis_period" title="Permalink to this definition">¶</a></dt>
+<dd><p>“Initialize a RevisedClearSkyCondition from an analysis_period</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.designday.RevisedClearSkyCondition.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#RevisedClearSkyCondition.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.RevisedClearSkyCondition.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a Sky Condition from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;solar_model&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># string,</span>
+<span class="s2">&quot;month&quot;</span><span class="p">:</span> <span class="mi">1</span>  <span class="c1"># int,</span>
+<span class="s2">&quot;day_of_month&quot;</span><span class="p">:</span> <span class="mi">1</span>  <span class="c1"># int,</span>
+<span class="s2">&quot;tau_b&quot;</span><span class="p">:</span> <span class="mf">0.0</span>  <span class="c1"># float,</span>
+<span class="s2">&quot;tau_d&quot;</span><span class="p">:</span> <span class="mf">0.0</span>  <span class="c1"># float,</span>
+<span class="s2">&quot;daylight_savings_indicator&quot;</span><span class="p">:</span> <span class="s2">&quot;No&quot;</span>  <span class="c1">#string // &quot;Yes&quot; or &quot;No&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.designday.RevisedClearSkyCondition.radiation_values">
+<code class="descname">radiation_values</code><span class="sig-paren">(</span><em>location</em>, <em>timestep=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#RevisedClearSkyCondition.radiation_values"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.RevisedClearSkyCondition.radiation_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lists of driect normal, diffuse horiz, and global horiz rad at each timestep.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.designday.RevisedClearSkyCondition.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#RevisedClearSkyCondition.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.RevisedClearSkyCondition.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the Sky Condition to a dictionary.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.RevisedClearSkyCondition.day_of_month">
+<code class="descname">day_of_month</code><a class="headerlink" href="#ladybug.designday.RevisedClearSkyCondition.day_of_month" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the day of the month of the design day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.RevisedClearSkyCondition.hourly_sky_cover">
+<code class="descname">hourly_sky_cover</code><a class="headerlink" href="#ladybug.designday.RevisedClearSkyCondition.hourly_sky_cover" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lists of sky cover values in tenths.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.RevisedClearSkyCondition.isSkyCondition">
+<code class="descname">isSkyCondition</code><a class="headerlink" href="#ladybug.designday.RevisedClearSkyCondition.isSkyCondition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.RevisedClearSkyCondition.month">
+<code class="descname">month</code><a class="headerlink" href="#ladybug.designday.RevisedClearSkyCondition.month" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the month of the design day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.RevisedClearSkyCondition.sky_types">
+<code class="descname">sky_types</code><a class="headerlink" href="#ladybug.designday.RevisedClearSkyCondition.sky_types" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of possible sky types that can be associated with design days.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.RevisedClearSkyCondition.solar_model">
+<code class="descname">solar_model</code><a class="headerlink" href="#ladybug.designday.RevisedClearSkyCondition.solar_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the type of solar model.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.RevisedClearSkyCondition.tau_b">
+<code class="descname">tau_b</code><a class="headerlink" href="#ladybug.designday.RevisedClearSkyCondition.tau_b" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the beam optical sky depth.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.RevisedClearSkyCondition.tau_d">
+<code class="descname">tau_d</code><a class="headerlink" href="#ladybug.designday.RevisedClearSkyCondition.tau_d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the diffuse optical sky depth.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.designday.SkyCondition">
+<em class="property">class </em><code class="descclassname">ladybug.designday.</code><code class="descname">SkyCondition</code><span class="sig-paren">(</span><em>solar_model</em>, <em>month</em>, <em>day_of_month</em>, <em>daylight_savings_indicator='No'</em>, <em>beam_shced=''</em>, <em>diff_sched=''</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#SkyCondition"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.SkyCondition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>An object representing a sky on the design day.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>solar_model</strong> – Text for the name of the solar model to use. Choose from the
+following: ‘ASHRAEClearSky’, ‘ASHRAETau’, ‘ZhangHuang’, ‘Schedule’</li>
+<li><strong>month</strong> – Month in which the design day occurs.</li>
+<li><strong>day_of_month</strong> – Day of the month on which the design day occurs.</li>
+<li><strong>daylight_savings_indicator</strong> – Text (‘Yes’ or ‘No’), for whether daylight savings
+time is active. Default: ‘No’</li>
+<li><strong>beam_shced</strong> – Schedule name for beam irradiance. Shoulb be an empty string unless
+solar_model is ‘Schedule’.</li>
+<li><strong>diff_sched</strong> – Schedule name for diffuse irradiance. Shoulb be an empty string
+unless solar_model is ‘Schedule’.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Properties:</dt>
+<dd><ul class="first last simple">
+<li>month</li>
+<li>day_of_month</li>
+<li>hourly_sky_cover</li>
+<li>sky_types</li>
+<li>solar_model</li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="ladybug.designday.SkyCondition.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#SkyCondition.ToString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.SkyCondition.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.designday.SkyCondition.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#SkyCondition.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.SkyCondition.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a Sky Condition from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;solar_model&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># string,</span>
+<span class="s2">&quot;month&quot;</span><span class="p">:</span> <span class="mi">1</span>  <span class="c1"># int,</span>
+<span class="s2">&quot;day_of_month&quot;</span><span class="p">:</span> <span class="mi">1</span>  <span class="c1"># int,</span>
+<span class="s2">&quot;daylight_savings_indicator&quot;</span><span class="p">:</span> <span class="s2">&quot;No&quot;</span>  <span class="c1"># string // &quot;Yes&quot; or &quot;No&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.designday.SkyCondition.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#SkyCondition.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.SkyCondition.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the Sky Condition to a dictionary.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.SkyCondition.day_of_month">
+<code class="descname">day_of_month</code><a class="headerlink" href="#ladybug.designday.SkyCondition.day_of_month" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the day of the month of the design day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.SkyCondition.hourly_sky_cover">
+<code class="descname">hourly_sky_cover</code><a class="headerlink" href="#ladybug.designday.SkyCondition.hourly_sky_cover" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lists of sky cover values in tenths.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.SkyCondition.isSkyCondition">
+<code class="descname">isSkyCondition</code><a class="headerlink" href="#ladybug.designday.SkyCondition.isSkyCondition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.SkyCondition.month">
+<code class="descname">month</code><a class="headerlink" href="#ladybug.designday.SkyCondition.month" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the month of the design day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.SkyCondition.sky_types">
+<code class="descname">sky_types</code><a class="headerlink" href="#ladybug.designday.SkyCondition.sky_types" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of possible sky types that can be associated with design days.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.SkyCondition.solar_model">
+<code class="descname">solar_model</code><a class="headerlink" href="#ladybug.designday.SkyCondition.solar_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the type of solar model.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ladybug.designday.WindCondition">
+<em class="property">class </em><code class="descclassname">ladybug.designday.</code><code class="descname">WindCondition</code><span class="sig-paren">(</span><em>wind_speed</em>, <em>wind_direction=0</em>, <em>rain=False</em>, <em>snow_on_ground=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#WindCondition"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.WindCondition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represents wind and rain conditions on the design day.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>wind_speed</strong> – Wind speed on the design day [m/s].</li>
+<li><strong>wind_direction</strong> – Wind direction on the design day [degrees]. Default: 0</li>
+<li><strong>rain</strong> – Boolean to indicate rain on the design day. Default: False.</li>
+<li><strong>snow_on_ground</strong> – Boolean to indicate snow on the design day. Default: False.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Properties:</dt>
+<dd><ul class="first last simple">
+<li>wind_speed</li>
+<li>wind_direction</li>
+<li>rain</li>
+<li>snow_on_ground</li>
+<li>hourly_values</li>
+<li>hourly_wind_dirs</li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="ladybug.designday.WindCondition.ToString">
+<code class="descname">ToString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#WindCondition.ToString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.WindCondition.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug.designday.WindCondition.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#WindCondition.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.WindCondition.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a Wind Condition from a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – A python dictionary in the following format</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;wind_speed&quot;</span><span class="p">:</span> <span class="mf">0.0</span>  <span class="c1"># float,</span>
+<span class="s2">&quot;wind_direction&quot;</span><span class="p">:</span> <span class="mf">0.0</span>  <span class="c1"># float,</span>
+<span class="s2">&quot;rain&quot;</span><span class="p">:</span> <span class="bp">False</span>  <span class="c1"># bool,</span>
+<span class="s2">&quot;snow_on_ground&quot;</span><span class="p">:</span> <span class="bp">False</span>  <span class="c1"># bool</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug.designday.WindCondition.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/designday.html#WindCondition.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.designday.WindCondition.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the Wind Condition to a dictionary.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.WindCondition.hourly_values">
+<code class="descname">hourly_values</code><a class="headerlink" href="#ladybug.designday.WindCondition.hourly_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of wind speed values for each hour over the design day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.WindCondition.hourly_wind_dirs">
+<code class="descname">hourly_wind_dirs</code><a class="headerlink" href="#ladybug.designday.WindCondition.hourly_wind_dirs" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of wind directions for each hour over the design day.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.WindCondition.isWindCondition">
+<code class="descname">isWindCondition</code><a class="headerlink" href="#ladybug.designday.WindCondition.isWindCondition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.WindCondition.rain">
+<code class="descname">rain</code><a class="headerlink" href="#ladybug.designday.WindCondition.rain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the presence of rain.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.WindCondition.snow_on_ground">
+<code class="descname">snow_on_ground</code><a class="headerlink" href="#ladybug.designday.WindCondition.snow_on_ground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the presence of snow on the ground.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.WindCondition.wind_direction">
+<code class="descname">wind_direction</code><a class="headerlink" href="#ladybug.designday.WindCondition.wind_direction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the wind direction.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug.designday.WindCondition.wind_speed">
+<code class="descname">wind_speed</code><a class="headerlink" href="#ladybug.designday.WindCondition.wind_speed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the wind speed.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2019, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
